@@ -1,12 +1,8 @@
 
 = @books.each do |book|
-  %h2
-    Title:
+  %p.vertical-text
     = link_to book.title, book
     <br>
-  %h2
-    Author:
     = link_to book.author, book
-  <br>
-  <br>
+
 

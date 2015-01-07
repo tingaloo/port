@@ -1,7 +1,7 @@
 class BooksController < ApplicationController
 
   def index
-    @books = Book.all
+    @books = Book.all.order('created_at DESC')
   end
 
   def new
@@ -12,6 +12,10 @@ class BooksController < ApplicationController
 
     @book.save
     redirect_to books_path
+  end
+
+  def show
+    @book = Book.find(params[:id])
   end
 
   def edit
