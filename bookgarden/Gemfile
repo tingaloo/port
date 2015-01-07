@@ -5,15 +5,11 @@ source 'https://rubygems.org'
 gem 'rails', '4.1.7'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
-# Stylize with bootstrap-sass
-gem 'bootstrap-sass', '~> 3.3.1.0'
-# Simple form to set up commenting
-gem 'simple_form', '~> 3.1.0'
-# Gem to allow records to be votable, in this case our posts.
-gem 'acts_as_votable', '~> 0.10.0'
-# Flexible authentication for user gem
-gem 'devise', '~> 3.4.1'
 # Use SCSS for stylesheets
+gem 'bootstrap-sass', '~> 3.3.1.0'
+gem 'haml', '~> 4.0.6'
+gem 'devise', '~> 3.4.1'
+
 gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
