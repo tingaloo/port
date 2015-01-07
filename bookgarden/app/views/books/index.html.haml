@@ -1,1 +1,9 @@
-%h1 Index
+%h1 Book Garden
+
+= @books.each do |book|
+  %h2.title.vertical
+    = link_to book.title, book
+  %p.author.vertical
+    = link_to book.author, book
+  = link_to "destroy", book, method: :delete, data: {confirm: 'Are you sure?'}, class: 'btn btn-primary'
+
