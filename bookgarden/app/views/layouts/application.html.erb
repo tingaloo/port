@@ -8,9 +8,11 @@
 </head>
 <body>
 
+<%# to render the partial, direct to parent folder then the header %>
+<%= render "layouts/header" %>
 
 <%# Stylized flash %>
-<div id="main_content" class="container">
+
 
 <% flash.each do |name, msg| %>
     <%= content_tag(:div, msg, class: "alert alert-info") %>
@@ -18,7 +20,7 @@
 
 <%= yield %>
 
-</div>
+
 
 </body>
 </html>
