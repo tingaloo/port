@@ -1,8 +1,10 @@
+.row.bookshelf
+  - @books.each do |book|
+    %p.vertical-text
+      = link_to book.title, book
+      <br>
+      = link_to book.author, book
 
-= @books.each do |book|
-  %p.vertical-text
-    = link_to book.title, book
-    <br>
-    = link_to book.author, book
+    %div
 
 
