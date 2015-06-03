@@ -1,0 +1,15 @@
+# Site settings
+title: Tingaloo's Bulb
+email: ting.lew@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  A quiet blog to listen to my stories and rants about whatever I like.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://yourdomain.com" # the base hostname & protocol for your site
+twitter_username: jekyllrb
+github_username:  jekyll
+
+# Build settings
+markdown: kramdown
+kramdown:
+  input: GFM
+paginate: 5

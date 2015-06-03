@@ -1,0 +1,196 @@
+/**
+ * Site Hero
+ */
+.hero-wrapper {
+    padding:25px;
+    background-color: $grey-color-light;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    width:100%;
+    margin-left: -$spacing-unit / 2;
+
+    > .wrapper > h2 {
+        color: $ubuntu-color;
+    }
+}
+
+.post-quote, p {
+  // font-family: ubuntu;
+}
+
+
+
+.side-nav {
+    list-style:none;
+    position: fixed;
+    list-style:none;
+    padding-top: 15px;
+    // display: none;
+    // width: 100%;
+    // width:rem-calc(300);
+    float:left;
+    > li{
+        max-width: -webkit-calc(800px - (30px * 2));
+        max-width: calc(800px - (30px * 2));
+
+        border-style:  solid;
+        border-width:  1px;
+        border-radius: 10px;
+        border-color:  #8bad93;
+        padding-left:  5px;
+        margin-bottom: 5px;
+        width: 200px;
+        transition: background-color 0.5s ease;
+        // transition: color 0.5s ease;
+        >a{
+            color:#8bad93;
+            font-family: Ubuntu;
+
+        }
+        &:hover{
+            background-color: #8bad93;
+            >a{
+                color:white;
+            }
+        }
+    }
+}
+
+.wrapper {
+    max-width:100%;
+
+}
+.home {
+max-width: -webkit-calc(800px - (30px * 2));
+  max-width: calc(800px - (30px * 2));
+  // width:500;
+  margin: 0 auto;
+  margin-left:200px;
+  // float:left;
+  // background-color:yellow;
+}
+
+.post {
+    margin: 0 auto;
+    margin-left:250px;
+    margin-right:100px;
+    font: 18px;
+        >.post-content > {
+            p{
+                font-size: 18px;
+                line-height: 30px;
+            }
+            h1 {
+                font-size: 28px;
+                line-height:50px;
+                font-weight: 400;
+            }
+        }
+    }
+
+@media only screen and (max-width: 750px) {
+
+  body { -webkit-text-size-adjust: none; }
+        .container { padding-left: 0; }
+
+    .side-nav{
+        position: relative;
+        max-width: calc(800px - (30px * 2));
+
+        >li{
+            display:inline;
+            margin-right: 5px;
+            >a{
+                padding-left:20px;
+                padding-right:20px;
+            }
+            // background-color:blue;
+            // padding-right:3px;
+
+        }
+
+    }
+    .home {
+        margin-left:0px;
+        margin-top:30px;
+    }
+
+    .post {
+        margin-left:0px;
+        margin-top:30px;
+        margin-right:1px;
+    }
+
+}
+
+
+.post-list2 {
+    // margin-left: 0;
+    list-style: none;
+    float:left;
+    > .post-col{
+
+        > li > .columns{
+            // margin-bottom: $spacing-unit;
+            // width:$box-width;
+            // height:$box-height;
+            // margin-right:$spacing-unit;
+            float:left;
+            // margin-right:10px;
+
+            > :hover {
+                // border-style: solid;
+                // border-radius: 10px;
+                // border-color: $box-highlight;
+            }
+
+            > :hover > h2 {
+
+                > .post-link{
+                    text-decoration: underline;
+
+                }
+
+                > .post-quote {
+                    // color: #2C001E;
+                    // visibility: visible;
+                }
+
+            }
+
+            > .box {
+                display:block;
+
+                // width: $box-width;
+                // height:$box-height;
+                // margin-right:10px;
+
+
+                > h2 {
+                    > .post-link {
+                    display: block;
+
+                    // float:left;
+                    // font-size: 24px;
+                    color: $box-text;
+                    // // margin-left:   10px;
+                    // margin-right:  10px;
+                    // margin-bottom: 10px;
+                    // float:left;
+                    // clear:both;
+                        > .post-meta  {
+                            font-size: $small-font-size;
+                            color: #5E2750;
+                            float:left;
+                            // color: $grey-color;
+                            margin:5px;
+
+                        }
+                    }
+
+                }
+
+            } // end box
+        }
+    }
+}
