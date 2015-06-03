@@ -76,7 +76,7 @@
             font-size:   28px;
             line-height: 50px;
             font-weight: 400;
-            }
+        }
     }
 }
 
@@ -123,18 +123,7 @@
     > .post-col{
 
         > li > .columns{
-            // margin-bottom: $spacing-unit;
-            // width:$box-width;
-            // height:$box-height;
-            // margin-right:$spacing-unit;
             float:left;
-            // margin-right:10px;
-
-            > :hover {
-                // border-style: solid;
-                // border-radius: 10px;
-                // border-color: $box-highlight;
-            }
 
             > :hover > h2 {
 
@@ -144,8 +133,6 @@
                 }
 
                 > .post-quote {
-                    // color: #2C001E;
-                    // visibility: visible;
                 }
 
             }
@@ -153,28 +140,14 @@
             > .box {
                 display:block;
 
-                // width: $box-width;
-                // height:$box-height;
-                // margin-right:10px;
-
-
                 > h2 {
                     > .post-link {
                     display: block;
-
-                    // float:left;
-                    // font-size: 24px;
                     color: $box-text;
-                    // // margin-left:   10px;
-                    // margin-right:  10px;
-                    // margin-bottom: 10px;
-                    // float:left;
-                    // clear:both;
                         > .post-meta  {
                             font-size: $small-font-size;
                             color: #5E2750;
                             float:left;
-                            // color: $grey-color;
                             margin:5px;
 
                         }
