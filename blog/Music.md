@@ -1,14 +1,13 @@
 ---
-layout: default
+layout: page
+title: Music
+permalink: /music/
 ---
-
-<div class="home">
-
-
 
 <div class="post-col-wrapper">
   <ul class="post-list">
-    {% for post in site.posts %}
+    {% for post in site.categories.music %}
+
     <div class="post-col">
       <li>
         <a class="box" href="{{ post.url | prepend: site.baseurl }}">
@@ -25,7 +24,4 @@ layout: default
       </div>
     {% endfor %}
   </ul>
-</div>
-<!--   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p> -->
-
 </div>
