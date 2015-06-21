@@ -20,9 +20,13 @@
 .side-nav {
     list-style:none;
     position: fixed;
-    list-style:none;
     padding-top: 15px;
     float:left;
+
+    // IF VERTICAL BAR
+    // border-right: 1px solid #8bad93;
+    // padding-right: 15px;
+    // padding-bottom: 15px;
     > li{
         max-width: -webkit-calc(800px - (30px * 2));
         max-width: calc(800px - (30px * 2));
@@ -48,6 +52,7 @@
     }
 }
 
+
 .wrapper {
     max-width:100%;
 }
@@ -55,17 +60,21 @@
 .home {
   max-width: -webkit-calc(800px - (30px * 2));
   max-width: calc(800px - (30px * 2));
-  // width:500;
+
   margin: 0 auto;
-  margin-left:200px;
-  // float:left;
-  // background-color:yellow;
+
+  // Change if Side-bar-border
+  // margin-left:200px;
+
 }
 
 .post {
     margin: 0 auto;
-    margin-left:250px;
-    margin-right:100px;
+
+    // IF sidebar
+    // margin-left:250px;
+    margin-left:200px;
+    margin-right:200px;
     font: 18px;
     > .post-content {
         >p{
@@ -88,6 +97,11 @@
     .side-nav{
         position: relative;
         max-width: calc(800px - (30px * 2));
+
+        // Remove border-right when fixed top.
+        border-right:none;
+        padding-right: 0px;
+        padding-bottom: 0px;
 
         >li{
             display:inline;
@@ -129,7 +143,6 @@
 
                 > .post-link{
                     text-decoration: underline;
-
                 }
 
                 > .post-quote {
@@ -158,4 +171,15 @@
             } // end box
         }
     }
+}
+
+.sitemap > ul, li {
+    list-style-type: none;
+}
+
+.keywords {
+    font-size: $small-font-size;
+color: #5E2750;
+float:left;
+margin:5px;
 }

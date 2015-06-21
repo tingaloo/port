@@ -1,0 +1,75 @@
+h1, ul, p {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300; }
+
+body {
+  background-image: url("../images/background.jpg");
+  background-repeat: no-repeat;
+  background-position: center; }
+  @media screen and (max-width: 800px) {
+    body {
+      background-position: 0% 40%; } }
+
+#myCanvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+  display: none; }
+
+.row {
+  width: 100%;
+  clear: both; }
+
+.name-card {
+  padding-left: 10%; }
+  .name-card > .name-text > h1 {
+    color: white;
+    background-color: rgba(132, 45, 92, 0.5);
+    padding: 20px 20px;
+    font-size: 42px;
+    font-family: ubuntu; }
+
+.projects-card {
+  padding-left: 5%;
+  background-color: rgba(255, 255, 255, 0.4);
+  width: 80%; }
+
+.card {
+  padding-left: 5%;
+  width: 50%;
+  background-color: rgba(255, 255, 255, 0.4); }
+  .card.projects {
+    width: 80%; }
+  .card.about {
+    background-color: transparent;
+    width: 60%; }
+  .card.rails-project, .card.static-project, .card.fun-project {
+    display: none; }
+  .card.rails-back, .card.static-back, .card.fun-back {
+    display: none;
+    width: 30%;
+    background-color: rgba(255, 255, 255, 0.4); }
+  .card:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white; }
+  .card > h1 {
+    padding: 0px 5px;
+    margin: 0px;
+    font-size: 42px; }
+  .card > p {
+    display: none;
+    padding-bottom: 5%;
+    padding-right: 5%; }
+  .card > ul {
+    display: none;
+    margin: 0px;
+    padding: 0px 0px;
+    font-size: 14px;
+    padding: 1% 5%;
+    list-style: none;
+    opacity: 1;
+    padding-bottom: 5%; }
+
+/*# sourceMappingURL=landing-page.css.map */

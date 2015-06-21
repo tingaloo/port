@@ -6,7 +6,8 @@
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
-  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+  # was main.css
+  <link rel="stylesheet" href="{{ "/css/main.scss" | prepend: site.baseurl }}">
 
 
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
@@ -19,10 +20,11 @@
 
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <script src="myScript.js"></script>
-
   <script type="text/javascript" src="/js/myScript.js"></script>
 
 </head>
+
+
 
 
 

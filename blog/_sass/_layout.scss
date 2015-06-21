@@ -2,7 +2,7 @@
  * Site header
  */
 .site-header {
-    background-color: #772953;
+    background-color: #BF1E9F;
     border-top: 5px solid $grey-color-dark;
     // border-bottom: 1px solid $grey-color-light;
     min-height: 56px;
@@ -17,25 +17,25 @@
     color:white;
     font-size: 28px;
     letter-spacing: -1px;
-
+    padding-top: 5px;
     float: left;
-    border-width:1px;
-    border-radius: 10px;
-    border-color: white;
-    border-style: solid;;
+
     padding-left: 15px;
     padding-right: 15px;
 
-    #oj {
-        display:none;
-        position:relative;
-            color:white;
-            border-radius: 10px;
-    // border-color: white;
+    #logo-bulb {
+        // display:none;
+    position:relative;
+    color:white;
+    border-radius: 100%;
+    width: 200px;
+    height: 200px;
+
     border-style: solid;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: 5px;
+    margin-right: 5px;
     }
 
     // display: inline-block;
@@ -64,8 +64,10 @@
         display: none;
     }
 
+
     .page-link {
         // color: $text-color;
+        transition: background-color 0.5s ease;
         color:white;
         line-height: $base-line-height;
         padding: 18px 12px;
@@ -113,17 +115,23 @@
         .trigger {
             clear: both;
             display: none;
+
+            > .page-link {
+                 background-color: #772953;
+                 color: white;
+            }
         }
 
         &:hover .trigger {
             display: block;
             padding-bottom: 5px;
-            color:white;
+            // color:white;
         }
 
         .page-link {
             display: block;
             padding: 5px 10px;
+            background-color: $background-color;
         }
     }
 }
@@ -255,6 +263,8 @@
             width:$box-width;
             height:$box-height;
             margin-right:$spacing-unit;
+            border-color:white;
+
 
 
             > :hover {
@@ -280,6 +290,7 @@
                 display:block;
                 width: $box-width;
                 height:$box-height;
+
                 // margin-right:10px;
 
 
@@ -294,7 +305,7 @@
                 > h2 {
                     > .post-link {
                     display: block;
-                    font-size: 24px;
+                    font-size: 28px;
                     color: $box-text;
                     margin-left:   10px;
                     margin-right:  10px;

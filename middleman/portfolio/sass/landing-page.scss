@@ -1,0 +1,116 @@
+h1,ul,p  {
+font-family: 'Lato', sans-serif;
+font-weight: 300;
+}
+
+body {
+  // background-color: #AEA79F;
+  background-image: url("../images/background.jpg");
+  background-repeat:no-repeat;
+// background-size:contain;
+background-position:center;
+
+  @media screen and (max-width: 800px){
+    background-position: 0% 40%;
+  }
+}
+
+#myCanvas {
+  position:fixed;
+  top:0;
+  left:0;
+  width: 100%;
+  z-index:-1;
+  display:none;
+}
+
+.row {
+  width:100%;
+  clear:both;
+}
+
+.name-card {
+  // position: absolute;
+  padding-left: 10%;
+  > .name-text {
+    // padding: 0 10%;
+    // background-color: green;
+
+    > h1 {
+      color: white;
+      // background-color: #842D5C;
+      background-color: rgba(132, 45, 92, .5);
+      padding: 20px 20px;
+      font-size: 42px;
+      font-family: ubuntu;
+    }
+  }
+}
+
+.projects-card {
+  // position: absolute;
+  padding-left: 5%;
+  background-color: rgba(255,255,255,0.4);
+  width:80%;
+}
+
+
+
+
+.card{
+  padding-left: 5%;
+  width:50%;
+  background-color: rgba(255,255,255,0.4);
+
+  &.projects {
+    width: 80%;
+  }
+
+  &.about {
+    background-color:transparent;
+    width: 60%;
+  }
+
+  &.contact {
+
+  }
+
+  &.rails-project, &.static-project, &.fun-project {
+    display:none;
+  }
+
+  &.rails-back, &.static-back, &.fun-back {
+    display:none;
+    width: 30%;
+    background-color: rgba(255,255,255,0.4);
+  }
+
+
+  &:hover {
+    // border-left: solid;
+    background-color: rgba(0,0,0,.2);
+    color: white;
+  }
+  > h1 {
+    padding: 0px 5px;
+    margin: 0px;
+    font-size: 42px;
+  }
+  > p{
+    display:none;
+    padding-bottom:5%;
+    padding-right: 5%;
+  }
+
+  > ul {
+    display: none;
+    margin:0px;
+    padding: 0px 0px;
+    font-size:14px;
+    padding: 1% 5%;
+    list-style: none;
+    opacity: 1;
+
+    padding-bottom:5%;
+  }
+}
