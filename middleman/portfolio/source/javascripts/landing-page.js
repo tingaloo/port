@@ -23,9 +23,9 @@ $(document).ready(function() {
     $(".default").fadeToggle("fast", function () {});
   });
 
-  $("#fun-toggle").click(function() {
+  $("#art-toggle").click(function() {
     $(".fun-back").fadeToggle("fast", function() {});
-    $(".fun-project").fadeToggle("fast", function () {});
+    $(".art-project").fadeToggle("fast", function () {});
     $(".default").fadeToggle("fast", function () {});
   });
 
@@ -57,10 +57,10 @@ $(document).ready(function() {
 
   $("#fun-back-toggle").click(function() {
 
-    click_all_open_cards('.fun-project');
+    click_all_open_cards('.art-project');
 
     $(".fun-back").fadeToggle("fast", function() {});
-    $(".fun-project").fadeToggle("fast", function() {});
+    $(".art-project").fadeToggle("fast", function() {});
     $(".default").fadeToggle("fast", function () {});
 
   });
