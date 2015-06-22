@@ -71,6 +71,8 @@ body {
     opacity: 1; }
     .card > ul > li:hover {
       color: #370D24; }
+      .card > ul > li:hover > a > i.fa:hover {
+        color: rgba(132, 45, 92, 0.9); }
 
 .site-cmyk {
   display: none; }

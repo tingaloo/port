@@ -18,7 +18,6 @@ $(document).ready(function()
       context.stroke(background);
 
 
-      //Alternate Track
       var track_offset = (canvas.height)*.5;
       var track_height = (canvas.height)*.1;
       var block_x = 25;

@@ -117,7 +117,18 @@ background-position:center;
     > li {
       &:hover {
         color: #370D24;
+
+      >a > i.fa{
+        // color:red;
+        &:hover {
+          color:rgba(132, 45, 92, .9);
+          // color:red;
+        }
       }
+      }
+
+
+
     }
 
     // padding-bottom:5%;
