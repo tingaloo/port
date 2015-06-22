@@ -1,0 +1,182 @@
+@import 'globals';
+@import 'side-nav';
+
+.background-paper {
+  height: 100%;
+  width: 100%;
+
+  background-image: url(../images/static-cmyk/groovepaper.png);
+
+  > .background-image {
+    height: 570px;
+    width: $content-width;
+    background-image: url(../images/static-cmyk/background.png);
+
+    -webkit-transition: height 1s;
+    > .call-to-action {
+      position: absolute;
+
+      font-size: 28px;
+      margin-top: 5%;
+      padding-left: 5%;
+
+      width: 65%;
+
+      >h1 {
+      font-family: sans-serif;
+      font-weight: bold;
+      }
+      #white {
+        color: white;
+      }
+    }
+  }
+
+
+
+  // during motion
+  > .motion-nav {
+        left:  80%;
+        width: 20%;
+    }
+
+  @media screen and (max-width: 800px) {
+
+    .background-image {
+      -webkit-transition: height 1s;
+
+      width:100%;
+      height:400px;
+
+      > .call-to-action {
+
+        width: 75%;
+      }
+    }
+
+    // consider creating separate class and use jquery addclass
+
+  } //end @media
+} // merge everything from bottom here.
+
+
+
+.graphic-background {
+
+  font-family: 'EB Garamond';
+  // margin-left:auto;
+  // margin-left: 5%;
+  // margin-right:30%;
+  width: $content-width;
+
+  > h1 {
+    margin:5% auto;
+    text-align: center;
+    // background-color: $logo-yellow-banner;
+    background-color: white;
+
+    color: #2F2B22;
+    width: 100%;
+    padding: 2% 0;
+    }
+
+
+  > .graphic-wrapper {
+
+    // TWO IMAGES MAX
+
+
+
+    > img {
+
+      margin-left:auto;
+      margin-right:auto;
+      width: 30%;
+      padding-bottom: 5%;
+    }
+
+    .wide:nth-child(even) {
+      width:50%;
+      margin-left:-5%;
+      margin-right:-30%;
+    }
+
+    .wide:nth-child(odd) {
+      width:80%;
+    }
+
+    > img:nth-child(odd) {
+      padding-left: 10%;
+      padding-right: 10%;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+
+  .graphic-background{
+    width:100%;
+    padding-top: 10%;
+    margin-left:auto;
+    margin-right:auto;
+    .graphic-wrapper {
+      margin-left:auto;
+      margin-right:auto;
+      width:100%;
+      > img {
+
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+
+  .graphic-background {
+    width:80%;
+    margin-left:auto;
+    margin-right:auto;
+    .graphic-wrapper {
+
+      > img {
+        width: 30%;
+        margin: 0 auto;
+        margin-bottom: 10%;
+      }
+
+      .wide {
+
+      }
+    }
+  }
+}
+
+@import 'about';
+@import 'motion';
+
+
+.interactive-background {
+  display:none;
+  width: 70%;
+  padding-top:5%;
+
+  > h1 {
+    font-family: 'EB Garamond';
+    margin-left:auto;
+    margin-right:auto;
+    width:100%;
+    text-align:center;
+  }
+
+  > p {
+    padding: 0 10%;
+    line-height:200%;
+    font-family: helvetica-neue;
+    font-size: 18px;
+  }
+
+  @media screen and (max-width: 800px) {
+    width: 100%;
+    padding-top: 10%;
+  }
+}

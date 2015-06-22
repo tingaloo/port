@@ -1,3 +1,5 @@
+
+
 h1,ul,p  {
 font-family: 'Lato', sans-serif;
 font-weight: 300;
@@ -47,12 +49,8 @@ background-position:center;
   }
 }
 
-.projects-card {
-  // position: absolute;
-  padding-left: 5%;
-  background-color: rgba(255,255,255,0.4);
-  width:80%;
-}
+
+
 
 
 
@@ -98,19 +96,35 @@ background-position:center;
   }
   > p{
     display:none;
+    font-size:14px;
     padding-bottom:5%;
     padding-right: 5%;
+  }
+  >a {
+    display:none;
+    padding-bottom:5%;
   }
 
   > ul {
     display: none;
     margin:0px;
     padding: 0px 0px;
-    font-size:14px;
+    font-size:18px;
     padding: 1% 5%;
     list-style: none;
     opacity: 1;
 
-    padding-bottom:5%;
+    > li {
+      &:hover {
+        color: #370D24;
+      }
+    }
+
+    // padding-bottom:5%;
   }
+}
+
+.site-cmyk {
+  display:none;
+  @import 'static-cmyk/site-cmyk';
 }

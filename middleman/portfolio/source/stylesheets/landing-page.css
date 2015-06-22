@@ -31,11 +31,6 @@ body {
     font-size: 42px;
     font-family: ubuntu; }
 
-.projects-card {
-  padding-left: 5%;
-  background-color: rgba(255, 255, 255, 0.4);
-  width: 80%; }
-
 .card {
   padding-left: 5%;
   width: 50%;
@@ -60,16 +55,229 @@ body {
     font-size: 42px; }
   .card > p {
     display: none;
+    font-size: 14px;
     padding-bottom: 5%;
     padding-right: 5%; }
+  .card > a {
+    display: none;
+    padding-bottom: 5%; }
   .card > ul {
     display: none;
     margin: 0px;
     padding: 0px 0px;
-    font-size: 14px;
+    font-size: 18px;
     padding: 1% 5%;
     list-style: none;
-    opacity: 1;
-    padding-bottom: 5%; }
+    opacity: 1; }
+    .card > ul > li:hover {
+      color: #370D24; }
+
+.site-cmyk {
+  display: none; }
+  .site-cmyk h1 {
+    font-family: 'EB Garamond'; }
+  .site-cmyk .side-nav-right {
+    position: fixed;
+    top: -1%;
+    left: 70%;
+    height: 100%;
+    background-color: rgba(255, 210, 79, 0.3);
+    width: 20%;
+    z-index: 100; }
+    .site-cmyk .side-nav-right > a > #logo {
+      margin-top: 50%;
+      padding-left: 20px; }
+    .site-cmyk .side-nav-right > ul {
+      padding-top: 10%;
+      list-style-type: none;
+      font-size: 24px;
+      line-height: 140%;
+      font-family: 'EB Garamond', serif;
+      color: #2F2B22;
+      font-weight: bold;
+      padding-left: -5px; }
+      .site-cmyk .side-nav-right > ul li:before {
+        content: "+";
+        margin-right: 2px; }
+      .site-cmyk .side-nav-right > ul li {
+        transition: color 0.4s; }
+        .site-cmyk .side-nav-right > ul li:hover {
+          color: #A0948F; }
+    @media screen and (max-width: 800px) {
+      .site-cmyk .side-nav-right {
+        left: 0%;
+        width: 100%;
+        height: 100px;
+        background-color: transparent; }
+        .site-cmyk .side-nav-right > a > #logo {
+          position: absolute;
+          margin-top: 3%; }
+        .site-cmyk .side-nav-right > ul {
+          width: 100%;
+          padding: 10px 0px;
+          padding-left: 40%;
+          margin-top: 5%;
+          font-size: 14px;
+          background-color: white;
+          color: #192834; }
+          .site-cmyk .side-nav-right > ul > li {
+            display: inline;
+            padding-right: 5px; } }
+    @media screen and (max-width: 500px) {
+      .site-cmyk .side-nav-right {
+        display: block; }
+        .site-cmyk .side-nav-right > a > #logo {
+          height: 50%;
+          width: 20%;
+          padding-left: 10px; }
+        .site-cmyk .side-nav-right > ul {
+          padding-left: 25%; } }
+  .site-cmyk .nav-motion {
+    -webkit-transition: left 1s;
+    left: 80%;
+    width: 20%; }
+    @media screen and (max-width: 800px) {
+      .site-cmyk .nav-motion {
+        left: 0%; } }
+  .site-cmyk .background-paper {
+    height: 100%;
+    width: 100%;
+    background-image: url(../images/static-cmyk/groovepaper.png); }
+    .site-cmyk .background-paper > .background-image {
+      height: 570px;
+      width: 70%;
+      background-image: url(../images/static-cmyk/background.png);
+      -webkit-transition: height 1s; }
+      .site-cmyk .background-paper > .background-image > .call-to-action {
+        position: absolute;
+        font-size: 28px;
+        margin-top: 5%;
+        padding-left: 5%;
+        width: 65%; }
+        .site-cmyk .background-paper > .background-image > .call-to-action > h1 {
+          font-family: sans-serif;
+          font-weight: bold; }
+        .site-cmyk .background-paper > .background-image > .call-to-action #white {
+          color: white; }
+    .site-cmyk .background-paper > .motion-nav {
+      left: 80%;
+      width: 20%; }
+    @media screen and (max-width: 800px) {
+      .site-cmyk .background-paper .background-image {
+        -webkit-transition: height 1s;
+        width: 100%;
+        height: 400px; }
+        .site-cmyk .background-paper .background-image > .call-to-action {
+          width: 75%; } }
+  .site-cmyk .graphic-background {
+    font-family: 'EB Garamond';
+    width: 70%; }
+    .site-cmyk .graphic-background > h1 {
+      margin: 5% auto;
+      text-align: center;
+      background-color: white;
+      color: #2F2B22;
+      width: 100%;
+      padding: 2% 0; }
+    .site-cmyk .graphic-background > .graphic-wrapper > img {
+      margin-left: auto;
+      margin-right: auto;
+      width: 30%;
+      padding-bottom: 5%; }
+    .site-cmyk .graphic-background > .graphic-wrapper .wide:nth-child(even) {
+      width: 50%;
+      margin-left: -5%;
+      margin-right: -30%; }
+    .site-cmyk .graphic-background > .graphic-wrapper .wide:nth-child(odd) {
+      width: 80%; }
+    .site-cmyk .graphic-background > .graphic-wrapper > img:nth-child(odd) {
+      padding-left: 10%;
+      padding-right: 10%; }
+  @media screen and (max-width: 800px) {
+    .site-cmyk .graphic-background {
+      width: 100%;
+      padding-top: 10%;
+      margin-left: auto;
+      margin-right: auto; }
+      .site-cmyk .graphic-background .graphic-wrapper {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%; } }
+  @media screen and (max-width: 600px) {
+    .site-cmyk .graphic-background {
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto; }
+      .site-cmyk .graphic-background .graphic-wrapper > img {
+        width: 30%;
+        margin: 0 auto;
+        margin-bottom: 10%; } }
+  .site-cmyk .about-background {
+    width: 70%;
+    padding-top: 5%; }
+    .site-cmyk .about-background > h1 {
+      font-family: 'EB Garamond';
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+      text-align: center; }
+    .site-cmyk .about-background > p {
+      padding: 0 15%;
+      line-height: 200%;
+      font-family: helvetica-neue;
+      font-size: 18px; }
+    @media screen and (max-width: 800px) {
+      .site-cmyk .about-background {
+        width: 100%; } }
+  .site-cmyk .motion-background {
+    height: 570px;
+    width: 70%; }
+    .site-cmyk .motion-background > h1 {
+      font-family: 'EB Garamond';
+      text-align: center;
+      background-color: white;
+      color: #2F2B22;
+      width: 100%;
+      padding: 2% 0; }
+    .site-cmyk .motion-background > .gif {
+      position: relative;
+      top: 10%;
+      left: 15%;
+      bottom: 0;
+      background-image: url(../images/static-cmyk/test.gif);
+      width: 450px;
+      height: 252px; }
+    .site-cmyk .motion-background > .gif-2 {
+      position: relative;
+      top: 5px;
+      left: 20%;
+      bottom: 0;
+      margin: auto;
+      background-image: url(../images/static-cmyk/holiday2013.gif);
+      width: 400px;
+      height: 225px; }
+    @media screen and (max-width: 800px) {
+      .site-cmyk .motion-background {
+        padding-top: 10%;
+        width: 100%; } }
+  .site-cmyk .interactive-background {
+    display: none;
+    width: 70%;
+    padding-top: 5%; }
+    .site-cmyk .interactive-background > h1 {
+      font-family: 'EB Garamond';
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+      text-align: center; }
+    .site-cmyk .interactive-background > p {
+      padding: 0 10%;
+      line-height: 200%;
+      font-family: helvetica-neue;
+      font-size: 18px; }
+    @media screen and (max-width: 800px) {
+      .site-cmyk .interactive-background {
+        width: 100%;
+        padding-top: 10%; } }
 
 /*# sourceMappingURL=landing-page.css.map */

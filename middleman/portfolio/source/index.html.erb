@@ -1,11 +1,11 @@
 ---
-title: Welcome to Middleman
+title: Ting.Lew
 ---
 <div class="landing-page">
 <div class="name-card">
             <div class="name-text">
                 <h1>
-                    TING.LEW | WEB.DEVELOPER
+                    Ting.Lew | web.developer
                 </h1>
             </div>
 
@@ -22,7 +22,7 @@ title: Welcome to Middleman
 
         <div class="card about default">
             <h1>About</h1>
-            <p>I am passionate about making the web a better place. I have been told my analogies are poor and my catch-phrases random.</p>
+            <p>I am constantly looking for new technologies to make the user experience better. I have also been told my that my analogies and catch-phrases are random.</p>
         </div>
         <div class="card contact default">
             <h1>Contact</h1>
@@ -33,25 +33,42 @@ title: Welcome to Middleman
         </div>
 
         <div class="card rails rails-project">
-            <h1>NovelShare</h1>
+            <h1 id='toggle-project-rails-novelshare'>NovelShare</h1>
 
-            <p>A project originally a GoodReads clone slowly became a library system. Signed in users can share ANY novel they want to other users. And </p>
+            <p>This Rails app is a Goodreads clone which became a library system. There are two versions, both have similar functionality but different UI.
+
+            <ul>
+                <li> <a href="http://agile-headland-2543.herokuapp.com/" target="_blank">New Version</a></li>
+                <li> <a href="http://mighty-mesa-4899.herokuapp.com/"  target="_blank">Old Version</a></li>
+            </ul></p>
+
+            <!-- <img src="../images/static-rails/novelshare.png" alt=""> -->
+
+        </div>
+
+        <div class="card phlee static-project">
+            <h1 id="toggle-phlee-site">P.H Lee Jewelry</h1>
+            <p>A website for a jewelry store I work at. I used Jekyll and Foundation to draw this mockup.<br><br>
+
+            I hosted the site on Heroku. Had I hosted it here, I would have to include the Foundation framework on top of existing stylesheets.<br><br>
+
+            <a href="http://jewelry-123.herokuapp.com/index.html" target="_blank">Heroku link</a></p>
+
 
         </div>
 
         <div class="card cmyk static-project">
             <h1 id="toggle-cmyk-site">CMYK+White</h1>
-            <p>This was my think on my feet project. My first thoughts, get a boilerplate and start creating layouts.</p>
+            <p>My first thoughts, grab a boilerplate and create a portfolio page. Then accent the work instead of simply displaying it.</p>
         </div>
 
-        <div class="card phlee static-project">
-            <h1 id="toggle-phlee-site">P.H Lee Jewelry</h1>
-            <p>A website for a jewelry store I used to work at. I used Jekyll and Foundation to draw this mockup.</p>
-        </div>
+
 
         <div class="card rails-art fun-project">
             <h1 id="toggle-rails-art">Rails Art</h1>
-            <p>A study using HTML5 canvas. A white rail stretches the landscape. Red rubies light the way from beginning to end.</p>
+            <p>A study using HTML5 canvas. <br>
+            A white rail stretches the landscape.<br>
+            Rubies light the way to the end.</p>
 
             <canvas id="myCanvas" width="1920" height="1080">
 
@@ -69,4 +86,14 @@ title: Welcome to Middleman
         <div class="card fun-back">
             <h1 id="fun-back-toggle">Back</h1>
         </div>
+
+        <!-- <div class="card test">
+            <h1 id='test'>Test Toggle</h1>
+        </div> -->
+
+
+</div>
+
+<div class="site-cmyk">
+            <%= partial 'project-static-cmyk' %>
 </div>

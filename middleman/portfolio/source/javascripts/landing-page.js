@@ -1,12 +1,15 @@
 $(document).ready(function() {
 
-  $("h1").click(function() {
+  //card click opens the card.
+  $(".card > h1").click(function() {
     // $(this).children("ul").css("display", "block");
     $(this).siblings().fadeToggle("fast", function() {
     });
 
 
   });
+
+  //default toggles.
 
   $("#rails-toggle").click(function() {
     $(".card").css("display", "none");
@@ -24,46 +27,41 @@ $(document).ready(function() {
     $(".fun-back").fadeToggle("fast", function() {});
     $(".fun-project").fadeToggle("fast", function () {});
     $(".default").fadeToggle("fast", function () {});
-
-    // var visible = $(".rails-art").children('p').css('display');
-    // if(visible == 'block'){
-    // $(".name-card").css("display", "none");
-    // }
   });
 
-
+  function click_all_open_cards(card_type) {
+    $(card_type).each(function () {
+      if($(this).children('ul, p').css("display") == 'block'){
+        $(this).children('h1').trigger('click');
+    }
+    });
+  }
 
 
   $("#rails-back-toggle").click(function() {
+
+    click_all_open_cards('.rails-project');
     $(".rails-back").fadeToggle("fast", function() {});
     $(".rails-project").fadeToggle("fast", function() {});
     $(".default").fadeToggle("fast", function () {});
   });
 
   $("#static-back-toggle").click(function() {
+
+    click_all_open_cards('.static-project');
     $(".static-back").fadeToggle("fast", function() {});
     $(".static-project").fadeToggle("fast", function() {});
     $(".default").fadeToggle("fast", function () {});
+
   });
 
   $("#fun-back-toggle").click(function() {
-    var visible = $(".name-card").css('display');
-    var fun_project_visibility = $("#toggle-rails-art").siblings("p").css("display");
 
-    if(fun_project_visibility =='block'){
-
-      $('#toggle-rails-art').trigger("click");
-
-      };
-
+    click_all_open_cards('.fun-project');
 
     $(".fun-back").fadeToggle("fast", function() {});
     $(".fun-project").fadeToggle("fast", function() {});
     $(".default").fadeToggle("fast", function () {});
-    // if(visible == 'none')
-    //   $(".name-card").fadeToggle("fast", function() {});
-    // end
-
 
   });
 
@@ -71,20 +69,17 @@ $(document).ready(function() {
   // Clicking a card changes the background to card context.
 
   $('#toggle-rails-art').click(function() {
-    // var visible = $(".rails-art").children('p').css('display');
-    // if(visible == 'block'){
-    // $(".name-card").css("display", "none");
-    // }
-    $(".name-card").fadeToggle("fast", function() {});
-    // else{
-    // $(".name-card").css("display", "block");
 
-    // }
-    // $("#myCanvas").fadeToggle("fast", function(){});
+    $(".name-card").fadeToggle("fast", function() {});
+
   });
 
-  $('#toggle-cmyk-site').click(function() {
+  $('#toggle-project-rails-novelshare').click(function() {
+  })
 
+  $('#toggle-cmyk-site').click(function() {
+    $(".site-cmyk").fadeToggle("slow", function() {});
+    $(".name-card").fadeToggle("fast", function() {});
   })
 
 

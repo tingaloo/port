@@ -1,0 +1,104 @@
+
+
+.side-nav-right {
+      position:fixed;
+      top: -1%;
+      left: 70%;
+
+      height: 100%;
+      background-color: $logo-yellow-fade;
+
+      width: 20%;
+      z-index: 100;
+
+      > a > #logo {
+        margin-top: 50%;
+        padding-left: 20px;
+      }
+
+
+
+      > ul {
+        padding-top: 10%;
+        list-style-type:none;
+        font-size: 24px;
+        line-height: 140%;
+        font-family: 'EB Garamond', serif;
+        color: #2F2B22;
+        font-weight: bold;
+
+        padding-left:-5px;
+
+        li:before {
+          content: "+";
+          margin-right: 2px;
+        }
+        li {
+          transition: color 0.4s;
+          &:hover {
+            color:#A0948F;
+          }
+        }
+      }
+
+
+      @media screen and (max-width: 800px) {
+        left: 0%;
+        width: 100%;
+        height: 100px;
+        background-color: transparent;
+
+        > a > #logo {
+          position: absolute;
+          margin-top: 3%;
+        }
+
+        > ul {
+          width:100%;
+          padding: 10px 0px;
+          padding-left: 40%;
+          // padding-right: 5%;
+          margin-top: 5%;
+
+          font-size: 14px;
+          background-color: white;
+
+          color: #192834;
+          > li {
+            display:inline;
+            padding-right: 5px;
+
+          }
+        }
+      }
+
+      @media screen and (max-width: 500px) {
+        display:block;
+        // top: 50%;
+
+        > a > #logo {
+          height:50%;
+          width:20%;
+          padding-left: 10px;
+          // margin-top: 3%;
+        }
+
+        > ul {
+          padding-left:25%;
+          > li {
+
+          }
+        }
+
+      }
+}
+
+// ON MOTION PAGE
+.nav-motion {
+  -webkit-transition: left 1s;
+        left:  80%;
+        width: 20%;
+  @media screen and (max-width: 800px) {
+    left: 0%;
+  }
+}
