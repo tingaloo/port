@@ -1,4 +1,4 @@
-h1, ul, p {
+h1, h2, h3, h4, ul, p {
   font-family: 'Lato', sans-serif;
   font-weight: 300; }
 
@@ -30,22 +30,28 @@ body {
     padding: 20px 20px;
     font-size: 42px;
     font-family: ubuntu; }
+  .name-card > .name-text > h2 {
+    color: white;
+    background-color: rgba(132, 45, 92, 0.3);
+    padding: 20px 20px;
+    font-size: 30px;
+    font-family: ubuntu; }
 
 .card {
   padding-left: 5%;
   width: 50%;
   background-color: rgba(255, 255, 255, 0.4); }
-  .card.projects {
-    width: 80%; }
-  .card.about {
+  .card:nth-child(even) {
     background-color: transparent;
-    width: 60%; }
+    width: 65%; }
   .card.rails-project, .card.static-project, .card.art-project {
     display: none; }
   .card.rails-back, .card.static-back, .card.fun-back {
     display: none;
     width: 30%;
     background-color: rgba(255, 255, 255, 0.4); }
+  .card.resume-back {
+    display: none; }
   .card:hover {
     background-color: rgba(0, 0, 0, 0.2);
     color: white; }
@@ -53,6 +59,14 @@ body {
     padding: 0px 5px;
     margin: 0px;
     font-size: 42px; }
+  .card > h2 {
+    display: none; }
+  .card > img {
+    display: none;
+    height: 150px;
+    opacity: .9;
+    border-radius: 50%;
+    margin-bottom: 5%; }
   .card > p {
     display: none;
     font-size: 14px;
@@ -71,8 +85,10 @@ body {
     opacity: 1; }
     .card > ul > li:hover {
       color: #370D24; }
-      .card > ul > li:hover > a > i.fa:hover {
-        color: rgba(132, 45, 92, 0.9); }
+      .card > ul > li:hover > a > i.fa {
+        padding-left: 5px; }
+        .card > ul > li:hover > a > i.fa:hover {
+          color: rgba(132, 45, 92, 0.9); }
 
 .site-cmyk {
   display: none; }
@@ -281,5 +297,25 @@ body {
       .site-cmyk .interactive-background {
         width: 100%;
         padding-top: 10%; } }
+
+.resume {
+  display: none; }
+  .resume .resume-container {
+    padding: 2% 10%;
+    background-color: white; }
+    .resume .resume-container > h1 {
+      color: #DD4814;
+      font-size: 32px;
+      display: inline-block;
+      width: 100%; }
+    .resume .resume-container h2 {
+      display: inline-block; }
+    .resume .resume-container .year {
+      float: right;
+      color: #DD4814;
+      font-size: 24px; }
+      @media screen and (max-width: 650px) {
+        .resume .resume-container .year {
+          font-size: 14px; } }
 
 /*# sourceMappingURL=landing-page.css.map */

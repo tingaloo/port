@@ -14,7 +14,7 @@ $(document).ready(function() {
   $("#rails-toggle").click(function() {
     $(".card").css("display", "none");
     $(".rails-back").fadeToggle("fast", function () {});
-    $(".rails").fadeToggle("fast", function () {});
+    $(".rails-project").fadeToggle("fast", function () {});
   });
 
   $("#static-site-toggle").click(function() {
@@ -65,6 +65,11 @@ $(document).ready(function() {
 
   });
 
+  $("#resume-back-toggle").click(function() {
+    $(".default").fadeToggle("fast", function() {});
+    $(".resume").fadeToggle("fast", function() {});
+    $(".resume-back").fadeToggle("fast", function() {});
+  })
 
   // Clicking a card changes the background to card context.
 
@@ -80,6 +85,13 @@ $(document).ready(function() {
   $('#toggle-cmyk-site').click(function() {
     $(".site-cmyk").fadeToggle("slow", function() {});
     $(".name-card").fadeToggle("fast", function() {});
+  })
+
+  $('#resume').click(function(){
+    // $(".resume").fadeToggle("fast", function() {});
+    $(".default").fadeToggle("fast", function() {});
+    $(".resume-back").fadeToggle("fast", function() {});
+    $(".resume").fadeToggle("fast", function() {});
   })
 
 

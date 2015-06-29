@@ -7,11 +7,12 @@ title: Ting.Lew
                 <h1>
                     Ting.Lew | web.developer
                 </h1>
+                <h2>Creating Rails and Single Page Applications.</h2>
             </div>
 
         </div>
 
-        <div class="card projects default">
+        <div class="card default">
             <h1>Projects</h1>
             <ul>
                 <li id="rails-toggle">Rails (1)</li>
@@ -20,18 +21,30 @@ title: Ting.Lew
             </ul>
         </div>
 
-        <div class="card about default">
+        <div class="card default">
             <h1>About</h1>
-            <p>I am constantly looking for new technologies to make the user experience better. I have also been told my that my analogies and catch-phrases are random.</p>
+            <p> Currently learning new ways to build the perfect single page application. I have been told my that my analogies and catch-phrases are random.</p>
+            <img src="./images/about-head-test.jpg" alt="">
+            <a href="http://stackoverflow.com/users/4021293/goda" target="_blank">
+            </a>
+
         </div>
-        <div class="card contact default">
+
+        <div class="card default">
+            <h1 id="resume">Resume</h1>
+        </div>
+        <div class="card default">
             <h1>Contact</h1>
             <ul>
                 <li>ting.lew@gmail.com</li>
                 <li>240.418.1754</li>
-                <li><a href="https://github.com/tingaloo">
+                <li><a href="https://github.com/tingaloo" target="_blank">
                 <i class="fa fa-github fa-2x"></i>
-                </a></li>
+                </a>
+                <a href="http://stackoverflow.com/users/4021293/goda" target="_blank">
+            <i class="fa fa-stack-overflow fa-2x"></i>
+            </a>
+                </li>
             </ul>
         </div>
 
@@ -46,15 +59,22 @@ title: Ting.Lew
             </ul></p>
 
             <!-- <img src="../images/static-rails/novelshare.png" alt=""> -->
+        </div>
 
+        <div class="card apartment rails-project">
+            <h1 id="toggle-project-rails-apartment">Apartment Therapy</h1>
+
+            <p>A Rails mockup of a lifestyle community website dedicated to homeowner happiness. It is built as a single-page application.</p>
         </div>
 
         <div class="card phlee static-project">
             <h1 id="toggle-phlee-site">P.H Lee Jewelry</h1>
-            <p>A website for a jewelry store I work at. I used Jekyll and Foundation to create this mockup.<br><br>
+            <p>I drew up a website for the jewelry store I used to work at. I used Jekyll and Foundation to create this mockup.
+            <h2>
+            Hosted on <a href="http://jewelry-123.herokuapp.com/index.html" target="_blank">Heroku</a>
+            </h2>
+            </p>
 
-            <br><br>
-            Hosted on <a href="http://jewelry-123.herokuapp.com/index.html" target="_blank">Heroku</a></p>
 
 
         </div>
@@ -88,11 +108,19 @@ title: Ting.Lew
             <h1 id="fun-back-toggle">Back</h1>
         </div>
 
+        <div class="card resume-back">
+            <h1 id="resume-back-toggle">Back</h1>
+        </div>
+
         <!-- <div class="card test">
             <h1 id='test'>Test Toggle</h1>
         </div> -->
 
 
+</div>
+
+<div class="resume">
+    <%= partial 'resume' %>
 </div>
 
 <div class="site-cmyk">

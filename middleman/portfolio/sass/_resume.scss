@@ -1,0 +1,28 @@
+.resume-container {
+  padding: 2% 10%;
+  background-color: white;
+
+  > h1 {
+  color:#DD4814;
+  font-size: 32px;
+  display: inline-block;
+  width:100%;
+  }
+
+  h2{
+    display:inline-block;
+    // margin: 2% 2%;
+  }
+
+  .year {
+    float:right;
+    color:#DD4814;
+    font-size: 24px;
+
+    @media screen and (max-width: 650px) {
+    font-size: 14px;
+    }
+  }
+}
+
+
