@@ -5,6 +5,7 @@ $(document).ready(function() {
     // $(this).children("ul").css("display", "block");
     $(this).siblings().fadeToggle("fast", function() {
     });
+    $(this).parent().css("height", "");
 
 
   });

@@ -7,13 +7,19 @@ font-weight: 300;
 
 body {
   // background-color: #AEA79F;
-  background-image: url("../images/background.jpg");
-  background-repeat:no-repeat;
+  // background-image: url("../images/background.jpg");
+  // background-repeat:no-repeat;
+  // height: 500px;
 // background-size:contain;
-background-position:center;
-
-  @media screen and (max-width: 800px){
-    background-position: 0% 40%;
+  // background-position:center;
+  height: 100%;
+  @media screen and (max-width: 600px){
+    // background-position: 0% 20%;
+  //     -webkit-transform: rotate(90deg);
+  // -moz-transform: rotate(90deg);
+  // -ms-transform: rotate(90deg);
+  // -o-transform: rotate(90deg);
+  // transform: rotate(90deg);
   }
 }
 
@@ -33,7 +39,17 @@ background-position:center;
 
 .name-card {
   // position: absolute;
+  display:block;
+
   padding-left: 10%;
+  padding-right: 40%;
+  @media screen and (max-width: 700px){
+    padding-right:20%;
+  }
+
+  @media screen and (max-width:450px) {
+    padding-right: 0%;
+  }
   > .name-text {
     // padding: 0 10%;
     // background-color: green;
@@ -64,9 +80,11 @@ background-position:center;
 
 
 .card{
+  display:block;
   padding-left: 5%;
   width:50%;
   background-color: rgba(255,255,255,0.4);
+  height: 15vh;
   &:nth-child(even){
     background-color:transparent;
     width: 65%;

@@ -3,12 +3,7 @@ h1, h2, h3, h4, ul, p {
   font-weight: 300; }
 
 body {
-  background-image: url("../images/background.jpg");
-  background-repeat: no-repeat;
-  background-position: center; }
-  @media screen and (max-width: 800px) {
-    body {
-      background-position: 0% 40%; } }
+  height: 100%; }
 
 #myCanvas {
   position: fixed;
@@ -23,7 +18,15 @@ body {
   clear: both; }
 
 .name-card {
-  padding-left: 10%; }
+  display: block;
+  padding-left: 10%;
+  padding-right: 40%; }
+  @media screen and (max-width: 700px) {
+    .name-card {
+      padding-right: 20%; } }
+  @media screen and (max-width: 450px) {
+    .name-card {
+      padding-right: 0%; } }
   .name-card > .name-text > h1 {
     color: white;
     background-color: rgba(132, 45, 92, 0.5);
@@ -38,9 +41,11 @@ body {
     font-family: ubuntu; }
 
 .card {
+  display: block;
   padding-left: 5%;
   width: 50%;
-  background-color: rgba(255, 255, 255, 0.4); }
+  background-color: rgba(255, 255, 255, 0.4);
+  height: 15vh; }
   .card:nth-child(even) {
     background-color: transparent;
     width: 65%; }
