@@ -8,42 +8,70 @@ title: Welcome to Middleman
 
 <nav class="main">
   <ul>
-    <li>Home</li>
-    <li>Projects</li>
-    <li>Skills</li>
-    <li>Contact</li>
+    <li>
+      <a class="jumper" href="#content">Home</a>
+    </li>
+    <li>
+      <a class="jumper" href="#section1">Skills</a>
+    </li>
+    <li>
+      <a class="jumper" href="#portfolio-section">Projects</a>
+    </li>
+    <li id="nav-contact"><a href="#">Contact</a></li>
+  </ul>
+  <ul id="contact-info">
+    <li>ting.lew@gmail.com</li>
+    <li>240-418-1754</li>
   </ul>
 </nav>
 
 <div id="section0">
+<canvas id="myCanvas" width="1280" height="750">Your browser does not support canvas</canvas>
   <div id="content">
-    <h1>TING.LEW</h1>
+    <h1>TING.LEW</h1><img src="./images/about-head-test.jpg" alt="">
     <h2>Currently developing Rails applications</h2>
-    <!-- <h2>On route to creating professional single page applications</h2>
-    <p>A web developer looking to create the best single page applications the web can handle</p> -->
+
   </div>
-    <canvas id="myCanvas" width="1280" height="750">Your browser does not support canvas</canvas>
+
 
 </div>
 
-<!-- <div id="section1">
+<div id="section1">
   <div id="skills-section">
     <h1>Skills</h1>
-    <p>Function first, visuals and interactivity will then be justified</p>
-    <br>
-    <p>I am proficient creating and deploying Rails applications. My front-end knowledge includes
-    (HTML5, CSS3, JavaScript, Jquery, AJAX, SASS).
+    <p>I am proficient creating and deploying
+    <span class="highlight">Rails</span>
+    applications.</p>
 
-    I currently deploy with Heroku using PostgreSQL.
+    <p>My front-end knowledge includes</p>
+    <p class="highlight">HTML5 | CSS3 | JavaScript | Jquery | AJAX | SASS | Canvas | Foundation
+    </p>
+    <p> I am familiar with server side languages such as</p>
+    <p class="highlight">
+    Ruby, RVM, MySQL, PostgreSQL, Git, Bash
+    </p>
+
+
+    <p>I currently deploy with
+    <span class="highlight">Heroku & PostgreSQL</span>
+    </p>
+
+
+    <p>I use cool tools like
+    </p>
+    <p class="highlight">
+    Sublime Text, Photoshop, Grunt, and Mac OSX.
     </p>
   </div>
-</div> -->
+</div>
 
 <div id="section2">
   <div id="portfolio-section">
-    <h1>Portfolio</h1>
 
-    <h2>Rails - NovelShare</h2>
+    <h1 class="portfolio-title">Portfolio</h1>
+
+
+
     <div class="portfolio-row">
       <div class="portfolio-pic">
         <img src="./images/novelshare.png" alt="">
@@ -55,8 +83,8 @@ title: Welcome to Middleman
         <img src="./images/novelshare-3.png" alt="">
       </div>
       <div class="portfolio-description">
-        <p>A Rails application that simulates a sharing community between book lovers. It is attached to
-        the GoodReads API to retrieve book information and links to its bookpage. </p>
+        <p>NovelShare is a Rails application that simulates a sharing community between book lovers. It is attached to
+        the GoodReads API to retrieve book information and links to its bookpage. <a href="http://agile-headland-2543.herokuapp.com/" target="_blank">Heroku Link</a></p>
       </div>
     </div>
     <!-- <img class="portfolio-project" src="./images/novelshare-2.png" alt=""> -->
@@ -64,14 +92,20 @@ title: Welcome to Middleman
       <div class="portfolio-pic-mobile">
         <img src="./images/apartment.gif" alt="">
       </div>
+      <div class="portfolio-pic">
+        <img src="./images/apartment-3.png" alt="">
+      </div>
+      <div class="portfolio-pic">
+        <img src="./images/apartment-2.png" alt="">
+      </div>
         <div class="portfolio-description">
-          <p>A quick responsive mockup of ApartmentTherapy.com, a lifestyle blog built on Rails.
-          Posts are updated seamlessly using AJAX. A modal pops up for user posts, edits, and deletes. </p>
+          <p>A responsive mockup of <a href="http://apartmenttherapy.com" target="_blank">Apartment Therapy</a>, a lifestyle blog built on Rails.
+          Posts are submitted using a WYSIWYG editor through AJAX.
+          <a href="https://still-scrubland-3114.herokuapp.com/" target="_blank">Heroku Link</a> </p>
         </div>
 
       </div>
 
-      <h2>Static Sites</h2>
       <div class="portfolio-row">
         <div class="portfolio-pic">
           <img src="./images/cmyk-1.png" alt="">
@@ -80,7 +114,7 @@ title: Welcome to Middleman
           <img src="./images/cmyk.gif" alt="">
         </div>
           <div class="portfolio-description">
-            <p>A single page solution to a digital agency.  </p>
+            <p>This project is a single page solution for creative agency <a href="http://www.cmykpluswhite.com/" target="_blank">CMYK Plus White</a>. It is fully responsive and uses jQuery for page toggles. </p>
           </div>
 
       </div>
@@ -88,4 +122,11 @@ title: Welcome to Middleman
   </div>
 
 </div>
+
+<!-- <div id="section3">
+  <div id="contact-section">
+    <h1>Contact Me!</h1>
+    <p></p>
+  </div>
+</div> -->
 

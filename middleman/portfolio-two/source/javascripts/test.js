@@ -70,7 +70,7 @@ $(document).ready(function()
         }
 
         count++;
-        console.log("loop number" + count);
+
         // window.requestAnimationFrame(drawTrack);
       }
 
@@ -102,8 +102,6 @@ $(document).ready(function()
         context.lineTo(x+=100*scale, y-=150*scale);
         context.lineTo(x-=60*scale, y-=60*scale);
         context.lineTo(x,y);
-        console.log("ruby #" + count);
-        console.log(positions[0] + ", " + positions[1]);
         context.lineWidth = 1;
         context.fillStyle='rgba(221,72,20, ' + alpha + ")";
         context.closePath();
@@ -129,7 +127,7 @@ $(document).ready(function()
       window.requestAnimationFrame(drawTrack);
       // window.requestAnimationFrame(drawRuby);
 
-      for (var i=0; i<30; i++){
+      for (var i=0; i<7; i++){
         var rand = Math.round(Math.random()*(2000-500))+500;
         setTimeout(function(){ drawRuby(); }, rand);
         // drawRuby();
@@ -144,7 +142,5 @@ $(document).ready(function()
         drawRuby();
       });
 
-      document.getElementById('clear').addEventListener('click', function() {
-        context.clearRect(0, 0, canvas.width, canvas.height);
-      }, false);
+
 });
