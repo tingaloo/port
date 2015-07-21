@@ -1,30 +1,10 @@
-#myCanvas {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  min-width: 100%; }
-  @media only screen and (min-width: 650px) {
-    #myCanvas {
-      width: 100%; } }
-  @media screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1080px) {
-    #myCanvas {
-      top: 50%; } }
-
-#section0 {
+.home {
   display: block;
   background: #772953;
   height: 600px; }
   @media only screen and (max-width: 600em) {
-    #section0 {
+    .home {
       height: 100vh; } }
-
-#section1 {
-  margin: 10% 0%; }
-
-#section2 {
-  display: block;
-  height: 600px; }
 
 #content {
   position: absolute;
@@ -47,6 +27,26 @@
         margin-bottom: 4%; }
       #content > img {
         height: 200px; } }
+
+#myCanvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-width: 100%; }
+  @media only screen and (min-width: 650px) {
+    #myCanvas {
+      width: 100%; } }
+  @media screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1080px) {
+    #myCanvas {
+      top: 50%; } }
+
+#section1 {
+  margin: 10% 0%; }
+
+#section2 {
+  display: block;
+  height: 600px; }
 
 #skills-section {
   margin: 0% 10%;

@@ -20,19 +20,6 @@
   }
 }
 
-#section0{
-  display: block;
-  background: #772953;
-  height: 600px;
-  // width:100%;
-  @media only screen and (max-width: 800){
-    // height:500px;
-  }
-  @media only screen and (max-width: 600em) {
-    height:100vh;
-  }
-}
-
 #section1{
   margin:10% 0%;
 }
@@ -42,42 +29,7 @@
   height: 600px;
 }
 
-#content{
-  // background-color:white;
-  position:absolute;
-  color:white;
-  margin: 0% 0%;
-  background-color: transparent;
-  width:100%;
 
-
-  > h1 {
-    // font-size: 50px;
-    padding-top: 5%;
-    z-index:2;
-    //needed for override
-    margin: 0 0;
-  }
-  >img{
-    border-radius: 25%;
-    height:100px;
-  }
-
-
-  // s3 s4 s5
-  @media screen and (-webkit-min-device-pixel-ratio: 2.0) and (max-width: 1080px) {
-    top: 10%;
-    font-size: 4em;
-    // line-height: 200%;
-    > h1 {
-      margin-bottom: 4%;
-    }
-    > img {
-      height:200px;
-    }
-
-  }
-}
 
 #skills-section{
   margin: 0% 10%;
