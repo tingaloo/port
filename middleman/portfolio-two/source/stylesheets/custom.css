@@ -1,0 +1,161 @@
+#myCanvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-width: 100%; }
+  @media only screen and (min-width: 650px) {
+    #myCanvas {
+      width: 100%; } }
+  @media screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1080px) {
+    #myCanvas {
+      top: 50%; } }
+
+#section0 {
+  display: block;
+  background: #772953;
+  height: 600px; }
+  @media only screen and (max-width: 600em) {
+    #section0 {
+      height: 100vh; } }
+
+#section1 {
+  margin: 10% 0%; }
+
+#section2 {
+  display: block;
+  height: 600px; }
+
+#content {
+  position: absolute;
+  color: white;
+  margin: 0% 0%;
+  background-color: transparent;
+  width: 100%; }
+  #content > h1 {
+    padding-top: 5%;
+    z-index: 2;
+    margin: 0 0; }
+  #content > img {
+    border-radius: 25%;
+    height: 100px; }
+  @media screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1080px) {
+    #content {
+      top: 10%;
+      font-size: 4em; }
+      #content > h1 {
+        margin-bottom: 4%; }
+      #content > img {
+        height: 200px; } }
+
+#skills-section {
+  margin: 0% 10%;
+  padding-top: 2%;
+  font-size: 1.5em;
+  line-height: 200%; }
+  #skills-section > h1 {
+    border-bottom: solid 2px;
+    padding: 2% 2%; }
+  #skills-section > .highlight {
+    background-color: #772953;
+    color: white;
+    padding: 2% 2%; }
+  #skills-section > p > .highlight {
+    background-color: #772953;
+    color: white;
+    padding: 0% 2%; }
+
+#portfolio-section {
+  font-size: 1.5em; }
+  @media screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1080px) {
+    #portfolio-section {
+      font-size: 2em;
+      line-height: 200%; } }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+    #portfolio-section {
+      font-size: 2em;
+      line-height: 200%; } }
+  #portfolio-section > .portfolio-title {
+    padding: 2% 0%;
+    width: 60%;
+    margin: 5% auto;
+    font-size: 2em;
+    border-bottom: solid 2px; }
+
+.portfolio-row {
+  margin: 5% 5%;
+  width: auto;
+  max-width: none;
+  text-align: left; }
+
+.portfolio-pic {
+  height: 200px;
+  width: 30%;
+  display: inline-block; }
+  .portfolio-pic > img {
+    width: 300px; }
+
+.portfolio-pic-mobile {
+  display: inline-block;
+  width: 30%;
+  text-align: center; }
+  .portfolio-pic-mobile > img {
+    width: 150px;
+    height: 275px; }
+
+.portfolio-description {
+  display: inline-block;
+  width: 100%; }
+  .portfolio-description > p {
+    display: inline-block;
+    padding: 2% 10%;
+    width: 80%;
+    margin: auto;
+    background-color: rgba(224, 90, 43, 0.8);
+    color: white; }
+    .portfolio-description > p > a {
+      color: black; }
+
+.main {
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  top: 70%;
+  text-align: center;
+  z-index: 2; }
+  @media screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1080px) {
+    .main {
+      top: 80%; } }
+  .main > ul {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border-bottom: solid 2px;
+    padding: 2% 0%; }
+    .main > ul > li {
+      display: inline;
+      color: white;
+      list-style: none;
+      text-align: center;
+      padding: 0% 2%;
+      font-size: 2.5em; }
+      .main > ul > li > a {
+        color: white;
+        text-decoration: none; }
+  .main > #contact-info {
+    display: none;
+    color: white;
+    border-bottom: none; }
+
+#buttons {
+  position: absolute;
+  top: 5px;
+  left: 10px; }
+
+#buttons > input {
+  padding: 10px;
+  display: block;
+  margin-top: 5px; }
+
+/*# sourceMappingURL=custom.css.map */
