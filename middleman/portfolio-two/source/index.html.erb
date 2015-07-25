@@ -1,123 +1,16 @@
 ---
-title: Welcome to Middleman
+title: Ting Lew
 ---
-
-<!-- <div id="buttons">
-      <input type="button" id="clear" value="Clear">
-    </div> -->
-
-<nav class="main">
-  <ul>
-    <li>
-      <a class="jumper" href="#content">Home</a>
-    </li>
-    <li>
-      <a class="jumper" href="#section1">Skills</a>
-    </li>
-    <li>
-      <a class="jumper" href="#portfolio-section">Projects</a>
-    </li>
-    <li id="nav-contact"><a href="#">Contact</a></li>
-  </ul>
-  <ul id="contact-info">
-    <li>ting.lew@gmail.com</li>
-    <li>240-418-1754</li>
-  </ul>
-</nav>
-
+<!--
+<%= partial 'navbar' %>
+ -->
 <%= partial 'home' %>
 
-<div id="section1">
-  <div id="skills-section">
-    <h1>Skills</h1>
-    <p>I am proficient creating and deploying
-    <span class="highlight">Rails</span>
-    applications.</p>
+<%= partial 'projects-section' %>
 
-    <p>My front-end knowledge includes</p>
-    <p class="highlight">HTML5 | CSS3 | JavaScript | Jquery | AJAX | SASS | Canvas | Foundation
-    </p>
-    <p> I am familiar with server side languages such as</p>
-    <p class="highlight">
-    Ruby, RVM, MySQL, PostgreSQL, Git, Bash
-    </p>
+<%= partial 'about' %>
 
+<%= partial 'contact' %>
 
-    <p>I currently deploy with
-    <span class="highlight">Heroku & PostgreSQL</span>
-    </p>
-
-
-    <p>I use cool tools like
-    </p>
-    <p class="highlight">
-    Sublime Text, Photoshop, Grunt, and Mac OSX.
-    </p>
-  </div>
-</div>
-
-<div id="section2">
-  <div id="portfolio-section">
-
-    <h1 class="portfolio-title">Portfolio</h1>
-
-
-
-    <div class="portfolio-row">
-      <div class="portfolio-pic">
-        <img src="./images/novelshare.png" alt="">
-      </div>
-      <div class="portfolio-pic">
-        <img src="./images/novelshare-2.png" alt="">
-      </div>
-      <div class="portfolio-pic">
-        <img src="./images/novelshare-3.png" alt="">
-      </div>
-      <div class="portfolio-description">
-        <p>NovelShare is a Rails application that simulates a sharing community between book lovers. It is attached to
-        the GoodReads API to retrieve book information and links to its bookpage. <a href="http://agile-headland-2543.herokuapp.com/" target="_blank">Heroku Link</a></p>
-      </div>
-    </div>
-    <!-- <img class="portfolio-project" src="./images/novelshare-2.png" alt=""> -->
-    <div class="portfolio-row">
-      <div class="portfolio-pic-mobile">
-        <img src="./images/apartment.gif" alt="">
-      </div>
-      <div class="portfolio-pic">
-        <img src="./images/apartment-3.png" alt="">
-      </div>
-      <div class="portfolio-pic">
-        <img src="./images/apartment-2.png" alt="">
-      </div>
-        <div class="portfolio-description">
-          <p>A responsive mockup of <a href="http://apartmenttherapy.com" target="_blank">Apartment Therapy</a>, a lifestyle blog built on Rails.
-          Posts are submitted using a WYSIWYG editor through AJAX.
-          <a href="https://still-scrubland-3114.herokuapp.com/" target="_blank">Heroku Link</a> </p>
-        </div>
-
-      </div>
-
-      <div class="portfolio-row">
-        <div class="portfolio-pic">
-          <img src="./images/cmyk-1.png" alt="">
-        </div>
-        <div class="portfolio-pic-mobile">
-          <img src="./images/cmyk.gif" alt="">
-        </div>
-          <div class="portfolio-description">
-            <p>This project is a single page solution for creative agency <a href="http://www.cmykpluswhite.com/" target="_blank">CMYK Plus White</a>. It is fully responsive and uses jQuery for page toggles. </p>
-          </div>
-
-      </div>
-
-  </div>
-
-</div>
-
-<!-- <div id="section3">
-  <div id="contact-section">
-    <h1>Contact Me!</h1>
-    <p></p>
-  </div>
-</div> -->
+<%= partial 'modals' %>
 

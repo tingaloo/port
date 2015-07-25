@@ -24,9 +24,9 @@
   margin:10% 0%;
 }
 
-#section2 {
+#project-section {
   display:block;
-  height: 600px;
+  // height: 600px;
 }
 
 
@@ -56,77 +56,7 @@
   }
 }
 
-#portfolio-section {
-  font-size: 1.5em;
 
-  //s3, s4, s5
-  @media screen and (-webkit-min-device-pixel-ratio: 2.0) and (max-width: 1080px) {
-    font-size: 2em;
-  line-height: 200%;
-}
-
-  //iphone 4, 5, 6
-  @media only screen
-and (min-device-width : 320px)
-and (max-device-width : 568px) {
-  font-size: 2em;
-  line-height: 200%;
-}
-  // margin: 0% 15%;
-  >.portfolio-title{
-    padding: 2% 0%;
-    width:60%;
-    margin: 5% auto;
-    font-size: 2em;
-    border-bottom: solid 2px;
-  }
-}
-
-.portfolio-row {
-  margin: 5% 5%;
-  width:auto;
-  max-width: none;
-  text-align:left;
-}
-
-.portfolio-pic {
-  height:200px;
-  width:30%;
-  display: inline-block;
-  > img {
-    // width:100%;
-    width:300px;
-  }
-}
-
-.portfolio-pic-mobile {
-  display:inline-block;
-  width:30%;
-  text-align: center;
-  > img {
-    width: 150px;
-    height:275px;
-  }
-}
-
-.portfolio-description {
-  display:inline-block;
-
-  width:100%;
-  > p {
-    display:inline-block;
-    padding: 2% 10%;
-    width:80%;
-    margin: auto;
-    background-color: rgba(224, 90, 43, 0.8);
-    color: white;
-    > a {
-      color: black;
-    }
-    // margin-bottom: 30%;
-  }
-  // clear:both;
-}
 
 //navbar
 .main {
@@ -136,6 +66,7 @@ and (max-device-width : 568px) {
   top: 70%;
   text-align:center;
   z-index:2;
+
 
   @media screen and (-webkit-min-device-pixel-ratio: 2.0) and (max-width: 1080px) {
     top: 80%;
@@ -163,8 +94,8 @@ and (max-device-width : 568px) {
 
       >a{
         color:white;
-        // font-size:1.5em;
         text-decoration:none;
+        font-family: 'Ubuntu', sans-serif;
       }
     }
   }
