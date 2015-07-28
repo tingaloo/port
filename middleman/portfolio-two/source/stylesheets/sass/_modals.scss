@@ -7,13 +7,18 @@
 
   >.modal-body{
     >img{
-      max-height:400px;
+      max-height:300px;
     }
     >.summary{
       text-align:left;
       line-height: 2em;
       margin-top: 2%;
       padding: 0px 5%;
+    }
+
+    >.stack {
+      color:#CCC;
+    margin-top:5%;
     }
 
     >.project-links{

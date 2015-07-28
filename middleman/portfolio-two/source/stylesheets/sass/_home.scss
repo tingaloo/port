@@ -24,17 +24,12 @@
   padding-top: 5%;
 
   background:
-  #772953 -moz-linear-gradient(center top , #772953, #3aa5c3) repeat scroll 0% 0%;
-  background-image: -webkit-linear-gradient(top , #772953, #3aa5c3);
-    background-image: -moz-linear-gradient(center top , #772953, #3aa5c3);
-    background-image: -ms-linear-gradient(center top , #772953, #3aa5c3);
-    background-image: -o-linear-gradient(center top , #772953, #3aa5c3);
+  #772953 -moz-linear-gradient(center top , #772953, #F0F8FF) repeat scroll 0% 0%;
+  background-image: -webkit-linear-gradient(top , #772953, #F0F8FF);
+    background-image: -moz-linear-gradient(center top , #772953, #F0F8FF);
+    background-image: -ms-linear-gradient(center top , #772953, #F0F8FF);
+    background-image: -o-linear-gradient(center top , #772953, #F0F8FF);
 
-  > #intro-name {
-    font-size:4em;
-    margin: 3% auto;
-
-  }
   #avatar {
     border-radius: 25%;
     height:20vh;
@@ -58,6 +53,10 @@
     display: inline-block;
     position: relative;
     font-family: 'ubuntu', sans-serif;
+
+    @media (max-width: 768px) {
+      font-size:1.5em;
+    }
     >.hello:before
     {
       content: '';
@@ -86,6 +85,9 @@
     > div>p {
     font-size:1.5em;
 
+    @media (max-width: 768px) {
+      font-size:1em;
+    }
     }
   }
 

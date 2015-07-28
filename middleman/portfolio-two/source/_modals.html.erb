@@ -13,7 +13,7 @@
         </div>
       </div>
         <p class="summary">NovelShare is a library system connected to the GoodReads API. Users can share books with each other, or fetch free ones from GoodReads most popular list.</p>
-        <p>Built with Rails, Foundation, Sass</p>
+        <p class="stack">Rails | Foundation | Sass</p>
         <p class="project-links"><a href="http://agile-headland-2543.herokuapp.com/" target="_blank">Demo</a>
         <a href="https://github.com/tingaloo/novelshare" target="_blank">Github</a></p>
       </div>
@@ -39,10 +39,10 @@
           </div>
         </div>
         <p class="summary">I recreated ApartmentTherapy, a lifestyle blog website. The site focuses on the user blogging experience using AJAX modals and WYSIWYG editors.</p>
-        <p>Built with Rails, Foundation, SASS</p>
+        <p class="stack">Rails | Foundation | SASS</p>
         <p class="project-links">
             <a href="https://still-scrubland-3114.herokuapp.com/" target="_blank">Demo</a>
-            <a href="https://github.com/tingaloo/apartment">Github</a>
+            <a href="https://github.com/tingaloo/apartment" target="_blank">Github</a>
           </p>
       </div>
       <div class="modal-footer">
@@ -63,9 +63,9 @@
       <div class="modal-body">
         <img src="./images/cmyk-test.gif" alt="">
         <p class="summary">I recreated a digital agency's website into a single page home-page. The site uses hand-written jQuery without a Javascript framework.</p>
-        <p>Built with Jekyll, jQuery, SASS</p>
+        <p class="stack">Jekyll | jQuery | SASS</p>
         <p class="project-links">
-            <a href="https://github.com/tingaloo/cmyk">Github</a>
+            <a href="https://github.com/tingaloo/cmyk" target="_blank">Github</a>
           </p>
       </div>
       <div class="modal-footer">
@@ -75,7 +75,7 @@
   </div>
 </div>
 
-<!-- CMYKWhite -->
+<!-- Five Quizzes -->
 <div class="modal fade" id="modalFour" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -85,10 +85,12 @@
       </div>
       <div class="modal-body">
         <img src="./images/quiz.gif" alt="">
-        <p class="summary">A single page application built on the Javascript framework Meteor. It uses material design principles and responsive. </p>
+        <p class="summary">A single page quiz application. I focused primarily on the answer animations which chain jQuery events while handling data.</p>
+
+        <p class="stack">Meteor | SASS</p>
         <p class="project-links">
-            <a href="#">Meteor</a>
-            <a href="https://github.com/tingaloo/meteor-quiz">Github</a>
+            <a href="http://quizzes.meteor.com/" target="_blank">Demo</a>
+            <a href="https://github.com/tingaloo/meteor-quiz" target="_blank">Github</a>
           </p>
       </div>
       <div class="modal-footer">
@@ -97,3 +99,32 @@
     </div>
   </div>
 </div>
+
+<div class="modal fade" id="modalContact" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div id="contact">
+          <div class="row full-width">
+          <div class="col-md-6 col-sm-6 col-sm-offset-3 col-xs-12 col-xs-offset-0">
+            <h1>Contact</h1>
+            <form action="https://getsimpleform.com/messages?form_api_token=0e363312c3330862d5626a820867ee8c" method="post">
+              <div class="form-group">
+                <input type='text' class="form-control" name='name' placeholder='name'/>
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control" id="email" placeholder="Email">
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" id="message" rows="3", placeholder="Message"></textarea>
+              </div>
+            <button type="submit pull-right" class="btn btn-default">Submit</button>
+          </form>
+          </div>
+          </div>
+        </div>
+
+    </div>
+  </div>
+</div>
+
