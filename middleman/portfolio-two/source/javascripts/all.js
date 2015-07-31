@@ -23,7 +23,7 @@ $(document).ready(function(){
   // PROJECT THUMBNAIL ANIMATIONS
   $(".project-pic").mouseover(function(){
     $(this).parent().siblings().animate({
-      opacity: .5
+      opacity: 0.5
     },200
     );
   });
