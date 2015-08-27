@@ -1,23 +1,30 @@
 .project-section {
-  background-color:#F0F8FF;
+
   @media only screen and (max-width: 600em) {
 
   }
-  h1,h2{
+  h1{
     font-family: 'Ubuntu', sans-serif;
-
+    font-size: 2em;
+  }
+  p{
+    font-size:1.2em;
+    color:#A1B2B3;
   }
   padding-bottom: 5%;
+}
+
+.project-row {
+  padding-top: 5%;
 }
 
 .projects-header{
     // border-bottom: 2px solid white;
     width:100%;
-    // text-align:left;
+    text-align:center;
     font-size: 3em;
-    padding: 3% 0%;
+    padding: 3% 0;
     margin: 3% auto;
-    display: inline-block;
     position: relative;
     font-family: 'ubuntu', sans-serif;
     >.projects-header-text:before
@@ -53,6 +60,7 @@
   margin-left:auto;
   margin-right:auto;
   border-radius: 2%;
+  border: 1px solid black;
   // height:100%;
   overflow:hidden;
   opacity: 1;
@@ -76,8 +84,8 @@
     // s3 s4 s5
 
   @media screen and (-webkit-min-device-pixel-ratio: 2.0)and (max-width: 768px) {
-    max-height: 250px;
-  margin-bottom: 20%;
+    max-height: 350px;
+  // margin-bottom: 20%;
   }
 
   &:hover {
@@ -88,17 +96,49 @@
 }
 
 .project-caption {
-  position:absolute;
-  background-color:white;
-  text-align:left;
-  padding:5% 5%;
-  width:95%;
-  margin-left:auto;
-  margin-right:auto;
+  // position:absolute;
+  // background-color:white;
+  // text-align:left;
+  // padding:5% 5%;
+  // width:95%;
+  // margin-left:auto;
+  // margin-right:auto;
+  height: 350px;
 
-  >.project-name {
+  >h1 {
     font-size: 2em;
     font-family: 'Ubuntu', sans-serif;
+    color: #2E3333;
+  }
+
+  >.project-links{
+    > a {
+      display:inline-block;
+
+
+      color: #9c27b0;
+      border: 2px solid #9c27b0;
+      padding: 1.25rem 3rem 1.15rem;
+      margin: 10px 10px;
+      border-radius: 2rem;
+      text-decoration:none;
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+
+      -webkit-transition: background-color 500ms ease-in-out;
+      -moz-transition: background-color 500ms ease-in-out;
+      -o-transition: background-color 500ms ease-in-out;
+      -ms-transition: background-color 500ms ease-in-out;
+      transition: background-color 500ms ease-in-out;
+
+      &:active {
+        box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2);
+      }
+
+      &:hover {
+        background-color: #9c27b0;
+        color:white;
+      }
+    }
   }
 }
 

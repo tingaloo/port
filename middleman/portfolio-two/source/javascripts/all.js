@@ -1,5 +1,13 @@
 //= require_tree .
 
+function intro_animations() {
+  setTimeout(function() {
+    $(".hello").addClass('underline');
+    $(".intro").toggle('slow') ;
+
+  }, 500);
+}
+
 $(document).ready(function(){
   // $("#nav-contact").click(function(e){
   //   e.preventDefault();
@@ -14,11 +22,9 @@ $(document).ready(function(){
   //   },600);
   // });
 
+
   // ONLOAD ANIMATIONS
-  setTimeout(function() {
-    $(".hello").addClass('underline');
-    $(".intro").toggle('slow') ;
-  }, 500);
+  intro_animations();
 
   // PROJECT THUMBNAIL ANIMATIONS
   $(".project-pic").mouseover(function(){

@@ -1,13 +1,7 @@
 #about-section {
-    background:#3aa5c3;
-      background:
-  #772953 -moz-linear-gradient(center top , #F0F8FF, #3aa5c3) repeat scroll 0% 0%;
-  background-image: -webkit-linear-gradient(top , #F0F8FF, #3aa5c3);
-    background-image: -moz-linear-gradient(center top , #F0F8FF, #3aa5c3);
-    background-image: -ms-linear-gradient(center top , #F0F8FF, #3aa5c3);
-    background-image: -o-linear-gradient(center top , #F0F8FF, #3aa5c3);
+
     height:100vh;
-    color:black;
+    color:#A1B2B3;
     @media only screen and (max-width: 600em) {
 
   }
@@ -39,36 +33,40 @@
       margin:5% 0%;
     }
   }
+  .contact-button {
+    text-align:center;
+    #contact-link {
+      margin:10%;
+      >a {
+        color: #9c27b0;
+        border: 2px solid #9c27b0;
+        padding: 1.25rem 3rem 1.15rem;
+        margin: 10px 10px;
+        border-radius: 6px;
+        text-decoration:none;
 
-  #contact-link {
-    margin:10%;
-    >a {
-      color: white;
-      border: 2px solid white;
-      padding: 1.25rem 3rem 1.15rem;
-      margin: 10px 10px;
-      border-radius: 6px;
-      text-decoration:none;
+        -webkit-transition: background-color 500ms ease-in-out;
+        -moz-transition: background-color 500ms ease-in-out;
+        -o-transition: background-color 500ms ease-in-out;
+        -ms-transition: background-color 500ms ease-in-out;
+        transition: background-color 500ms ease-in-out;
 
-      -webkit-transition: background-color 500ms ease-in-out;
-      -moz-transition: background-color 500ms ease-in-out;
-      -o-transition: background-color 500ms ease-in-out;
-      -ms-transition: background-color 500ms ease-in-out;
-      transition: background-color 500ms ease-in-out;
-
-      &:hover {
-        background-color: white;
-        color:#3aa5c3;
-        cursor: pointer;
+        &:hover {
+          background-color: #9c27b0;
+          color: white;
+          cursor: pointer;
+        }
       }
     }
   }
+
 }
 
 .about-header{
     // border-bottom: 2px solid white;
     width:100%;
-    // text-align:left;
+    text-align:center;
+    color: #2E3333;
     font-size: 3em;
     padding: 3% 0%;
     margin: 3% auto;
@@ -78,6 +76,7 @@
     text-transform: uppercase;
     >.about-header-text:before
     {
+
       content: '';
       position: absolute;
 

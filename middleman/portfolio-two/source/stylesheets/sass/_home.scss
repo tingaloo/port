@@ -1,39 +1,35 @@
 
 
-  //original   3aa5c3
-  // more blue   A591C3
-  // more purple 9291C3
   @media only screen and (max-width: 800){
     // height:500px;
   }
-  // @media only screen and (max-width: 600em) {
-  //   height:100vh;
-  // }
 
 
 .content{
 
-  h1, h2, li, p {
-    font-family: 'Ubuntu', sans-serif;
-  }
-  // background-color:white;
   height: 100vh;
   background: #772953;
-  color:white;
+  color:#A1B2B3;
   background-color: transparent;
   padding-top: 5%;
 
-  background:
-  #772953 -moz-linear-gradient(center top , #772953, #F0F8FF) repeat scroll 0% 0%;
-  background-image: -webkit-linear-gradient(top , #772953, #F0F8FF);
-    background-image: -moz-linear-gradient(center top , #772953, #F0F8FF);
-    background-image: -ms-linear-gradient(center top , #772953, #F0F8FF);
-    background-image: -o-linear-gradient(center top , #772953, #F0F8FF);
+  h1, h2, li, p {
+    font-family: 'Ubuntu', sans-serif;
+    font-size:1.5em;
 
+      @media (max-width: 768px) {
+        font-size:1em;
+      }
+  }
+
+.avatar-column {
+  text-align: center;
+}
   #avatar {
     border-radius: 25%;
+    border: 1px solid #9D99B2;
     height:20vh;
-    margin-top: 10%;
+    margin-top: 30%;
     background-color: rgba(255,255,255,.5);
   }
 .home-text{
@@ -72,6 +68,7 @@
         transition: .4s ease-in;
     }
 
+    //uncomment for underline animation
     >.underline:before{
       -webkit-transform: scaleX(1) !important;
       -ms-transform: scaleX(1) !important;
@@ -82,19 +79,25 @@
 
   .intro{
     display:none;
-    > div>p {
-    font-size:1.5em;
+    // padding-top: 15px;
+    > div > p {
+    // font-size:1.5em;
 
-    @media (max-width: 768px) {
-      font-size:1em;
-    }
+      @media (max-width: 768px) {
+        font-size:1em;
+      }
     }
   }
 
+  .intro-line {
+    >span {
+      background-color: white;
+    }
+  }
   .intro-buttons {
-    >a{
-      color: #772953;
-      padding-right: 4%;
+
+    >#so-link {
+      color: #F47920;
 
       -webkit-transition: color 500ms ease-in-out;
       -moz-transition: color 500ms ease-in-out;
@@ -103,7 +106,22 @@
       transition: color 500ms ease-in-out;
 
       &:hover {
-        color: white;
+        color: #A1B2B3;
+        text-decoration: none;
+      }
+    }
+    >#github-link {
+      color: #772953;
+
+      -webkit-transition: color 500ms ease-in-out;
+      -moz-transition: color 500ms ease-in-out;
+      -o-transition: color 500ms ease-in-out;
+      -ms-transition: color 500ms ease-in-out;
+      transition: color 500ms ease-in-out;
+
+      &:hover {
+        color: #A1B2B3;
+        text-decoration: none;
       }
     }
 

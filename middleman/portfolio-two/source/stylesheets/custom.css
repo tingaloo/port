@@ -12,20 +12,22 @@ h1, h2, h3, p, a, li {
 .content {
   height: 100vh;
   background: #772953;
-  color: white;
+  color: #A1B2B3;
   background-color: transparent;
-  padding-top: 5%;
-  background: #772953 -moz-linear-gradient(center top, #772953, #F0F8FF) repeat scroll 0% 0%;
-  background-image: -webkit-linear-gradient(top, #772953, #F0F8FF);
-  background-image: -moz-linear-gradient(center top, #772953, #F0F8FF);
-  background-image: -ms-linear-gradient(center top, #772953, #F0F8FF);
-  background-image: -o-linear-gradient(center top, #772953, #F0F8FF); }
+  padding-top: 5%; }
   .content h1, .content h2, .content li, .content p {
-    font-family: 'Ubuntu', sans-serif; }
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.5em; }
+    @media (max-width: 768px) {
+      .content h1, .content h2, .content li, .content p {
+        font-size: 1em; } }
+  .content .avatar-column {
+    text-align: center; }
   .content #avatar {
     border-radius: 25%;
+    border: 1px solid #9D99B2;
     height: 20vh;
-    margin-top: 10%;
+    margin-top: 30%;
     background-color: rgba(255, 255, 255, 0.5); }
   .content .home-text {
     text-align: left; }
@@ -61,21 +63,31 @@ h1, h2, h3, p, a, li {
       transform: scaleX(1) !important; }
   .content .intro {
     display: none; }
-    .content .intro > div > p {
-      font-size: 1.5em; }
-      @media (max-width: 768px) {
-        .content .intro > div > p {
-          font-size: 1em; } }
-  .content .intro-buttons > a {
-    color: #772953;
-    padding-right: 4%;
+    @media (max-width: 768px) {
+      .content .intro > div > p {
+        font-size: 1em; } }
+  .content .intro-line > span {
+    background-color: white; }
+  .content .intro-buttons > #so-link {
+    color: #F47920;
     -webkit-transition: color 500ms ease-in-out;
     -moz-transition: color 500ms ease-in-out;
     -o-transition: color 500ms ease-in-out;
     -ms-transition: color 500ms ease-in-out;
     transition: color 500ms ease-in-out; }
-    .content .intro-buttons > a:hover {
-      color: white; }
+    .content .intro-buttons > #so-link:hover {
+      color: #A1B2B3;
+      text-decoration: none; }
+  .content .intro-buttons > #github-link {
+    color: #772953;
+    -webkit-transition: color 500ms ease-in-out;
+    -moz-transition: color 500ms ease-in-out;
+    -o-transition: color 500ms ease-in-out;
+    -ms-transition: color 500ms ease-in-out;
+    transition: color 500ms ease-in-out; }
+    .content .intro-buttons > #github-link:hover {
+      color: #A1B2B3;
+      text-decoration: none; }
 
 #myCanvas {
   position: absolute;
@@ -157,17 +169,23 @@ h1, h2, h3, p, a, li {
   margin-top: 5px; }
 
 .project-section {
-  background-color: #F0F8FF;
   padding-bottom: 5%; }
-  .project-section h1, .project-section h2 {
-    font-family: 'Ubuntu', sans-serif; }
+  .project-section h1 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2em; }
+  .project-section p {
+    font-size: 1.2em;
+    color: #A1B2B3; }
+
+.project-row {
+  padding-top: 5%; }
 
 .projects-header {
   width: 100%;
+  text-align: center;
   font-size: 3em;
-  padding: 3% 0%;
+  padding: 3% 0;
   margin: 3% auto;
-  display: inline-block;
   position: relative;
   font-family: 'ubuntu', sans-serif; }
   .projects-header > .projects-header-text:before {
@@ -197,6 +215,7 @@ h1, h2, h3, p, a, li {
   margin-left: auto;
   margin-right: auto;
   border-radius: 2%;
+  border: 1px solid black;
   overflow: hidden;
   opacity: 1;
   transition: opacity .25s ease-in-out;
@@ -207,23 +226,36 @@ h1, h2, h3, p, a, li {
   -o-transition: margin 0.5s ease-in-out; }
   @media screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 768px) {
     .project-pic {
-      max-height: 250px;
-      margin-bottom: 20%; } }
+      max-height: 350px; } }
   .project-pic:hover {
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
     cursor: pointer; }
 
 .project-caption {
-  position: absolute;
-  background-color: white;
-  text-align: left;
-  padding: 5% 5%;
-  width: 95%;
-  margin-left: auto;
-  margin-right: auto; }
-  .project-caption > .project-name {
+  height: 350px; }
+  .project-caption > h1 {
     font-size: 2em;
-    font-family: 'Ubuntu', sans-serif; }
+    font-family: 'Ubuntu', sans-serif;
+    color: #2E3333; }
+  .project-caption > .project-links > a {
+    display: inline-block;
+    color: #9c27b0;
+    border: 2px solid #9c27b0;
+    padding: 1.25rem 3rem 1.15rem;
+    margin: 10px 10px;
+    border-radius: 2rem;
+    text-decoration: none;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+    -webkit-transition: background-color 500ms ease-in-out;
+    -moz-transition: background-color 500ms ease-in-out;
+    -o-transition: background-color 500ms ease-in-out;
+    -ms-transition: background-color 500ms ease-in-out;
+    transition: background-color 500ms ease-in-out; }
+    .project-caption > .project-links > a:active {
+      box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2); }
+    .project-caption > .project-links > a:hover {
+      background-color: #9c27b0;
+      color: white; }
 
 .project-description {
   display: inline-block;
@@ -250,14 +282,8 @@ h1, h2, h3, p, a, li {
     text-align: left; }
 
 #about-section {
-  background: #3aa5c3;
-  background: #772953 -moz-linear-gradient(center top, #F0F8FF, #3aa5c3) repeat scroll 0% 0%;
-  background-image: -webkit-linear-gradient(top, #F0F8FF, #3aa5c3);
-  background-image: -moz-linear-gradient(center top, #F0F8FF, #3aa5c3);
-  background-image: -ms-linear-gradient(center top, #F0F8FF, #3aa5c3);
-  background-image: -o-linear-gradient(center top, #F0F8FF, #3aa5c3);
   height: 100vh;
-  color: black; }
+  color: #A1B2B3; }
   #about-section h1 {
     font-family: 'Ubuntu', sans-serif; }
   #about-section #about-title {
@@ -280,27 +306,31 @@ h1, h2, h3, p, a, li {
     #about-section #about-block > p {
       text-align: left;
       margin: 5% 0%; }
-  #about-section #contact-link {
-    margin: 10%; }
-    #about-section #contact-link > a {
-      color: white;
-      border: 2px solid white;
-      padding: 1.25rem 3rem 1.15rem;
-      margin: 10px 10px;
-      border-radius: 6px;
-      text-decoration: none;
-      -webkit-transition: background-color 500ms ease-in-out;
-      -moz-transition: background-color 500ms ease-in-out;
-      -o-transition: background-color 500ms ease-in-out;
-      -ms-transition: background-color 500ms ease-in-out;
-      transition: background-color 500ms ease-in-out; }
-      #about-section #contact-link > a:hover {
-        background-color: white;
-        color: #3aa5c3;
-        cursor: pointer; }
+  #about-section .contact-button {
+    text-align: center; }
+    #about-section .contact-button #contact-link {
+      margin: 10%; }
+      #about-section .contact-button #contact-link > a {
+        color: #9c27b0;
+        border: 2px solid #9c27b0;
+        padding: 1.25rem 3rem 1.15rem;
+        margin: 10px 10px;
+        border-radius: 6px;
+        text-decoration: none;
+        -webkit-transition: background-color 500ms ease-in-out;
+        -moz-transition: background-color 500ms ease-in-out;
+        -o-transition: background-color 500ms ease-in-out;
+        -ms-transition: background-color 500ms ease-in-out;
+        transition: background-color 500ms ease-in-out; }
+        #about-section .contact-button #contact-link > a:hover {
+          background-color: #9c27b0;
+          color: white;
+          cursor: pointer; }
 
 .about-header {
   width: 100%;
+  text-align: center;
+  color: #2E3333;
   font-size: 3em;
   padding: 3% 0%;
   margin: 3% auto;
@@ -325,52 +355,5 @@ h1, h2, h3, p, a, li {
     -webkit-transform: scaleX(1) !important;
     -ms-transform: scaleX(1) !important;
     transform: scaleX(1) !important; }
-
-.modal-content > .modal-header > .modal-title {
-  font-family: 'Ubuntu', sans-serif; }
-.modal-content > .modal-body > img {
-  max-height: 300px; }
-.modal-content > .modal-body > .summary {
-  text-align: left;
-  line-height: 2em;
-  margin-top: 2%;
-  padding: 0px 5%; }
-.modal-content > .modal-body > .stack {
-  color: #CCC;
-  margin-top: 5%; }
-.modal-content > .modal-body > .project-links > a {
-  display: inline-block;
-  color: #9c27b0;
-  border: 2px solid #9c27b0;
-  padding: 1.25rem 3rem 1.15rem;
-  margin: 10px 10px;
-  border-radius: 2rem;
-  text-decoration: none;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
-  -webkit-transition: background-color 500ms ease-in-out;
-  -moz-transition: background-color 500ms ease-in-out;
-  -o-transition: background-color 500ms ease-in-out;
-  -ms-transition: background-color 500ms ease-in-out;
-  transition: background-color 500ms ease-in-out; }
-  .modal-content > .modal-body > .project-links > a:active {
-    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2); }
-  .modal-content > .modal-body > .project-links > a:hover {
-    background-color: #9c27b0;
-    color: white; }
-
-.mobile-pic {
-  position: absolute;
-  left: 5%;
-  top: 0;
-  height: 150px; }
-
-.desktop-pic {
-  max-height: 200px; }
-
-.vert-pic {
-  max-height: 300px; }
-
-.tablet-pic {
-  max-height: 175px; }
 
 /*# sourceMappingURL=custom.css.map */

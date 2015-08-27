@@ -1,57 +1,57 @@
 
-.modal-content{
+// .modal-content{
 
-  >.modal-header > .modal-title{
-    font-family: 'Ubuntu', sans-serif;
-  }
+//   >.modal-header > .modal-title{
+//     font-family: 'Ubuntu', sans-serif;
+//   }
 
-  >.modal-body{
-    >img{
-      max-height:300px;
-    }
-    >.summary{
-      text-align:left;
-      line-height: 2em;
-      margin-top: 2%;
-      padding: 0px 5%;
-    }
+//   >.modal-body{
+//     >img{
+//       max-height:300px;
+//     }
+//     >.summary{
+//       text-align:left;
+//       line-height: 2em;
+//       margin-top: 2%;
+//       padding: 0px 5%;
+//     }
 
-    >.stack {
-      color:#CCC;
-    margin-top:5%;
-    }
+//     >.stack {
+//       color:#CCC;
+//     margin-top:5%;
+//     }
 
-    >.project-links{
-    > a {
-      display:inline-block;
+//     >.project-links{
+//     > a {
+//       display:inline-block;
 
 
-      color: #9c27b0;
-      border: 2px solid #9c27b0;
-      padding: 1.25rem 3rem 1.15rem;
-      margin: 10px 10px;
-      border-radius: 2rem;
-      text-decoration:none;
-      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+//       color: #9c27b0;
+//       border: 2px solid #9c27b0;
+//       padding: 1.25rem 3rem 1.15rem;
+//       margin: 10px 10px;
+//       border-radius: 2rem;
+//       text-decoration:none;
+//       box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
 
-      -webkit-transition: background-color 500ms ease-in-out;
-      -moz-transition: background-color 500ms ease-in-out;
-      -o-transition: background-color 500ms ease-in-out;
-      -ms-transition: background-color 500ms ease-in-out;
-      transition: background-color 500ms ease-in-out;
+//       -webkit-transition: background-color 500ms ease-in-out;
+//       -moz-transition: background-color 500ms ease-in-out;
+//       -o-transition: background-color 500ms ease-in-out;
+//       -ms-transition: background-color 500ms ease-in-out;
+//       transition: background-color 500ms ease-in-out;
 
-      &:active {
-        box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2);
-      }
+//       &:active {
+//         box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2);
+//       }
 
-      &:hover {
-        background-color: #9c27b0;
-        color:white;
-      }
-    }
-  }
+//       &:hover {
+//         background-color: #9c27b0;
+//         color:white;
+//       }
+//     }
+//   }
 
-  }
+//   }
 
-}
+// }
 
