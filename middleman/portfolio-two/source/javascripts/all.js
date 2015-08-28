@@ -3,9 +3,9 @@
 function intro_animations() {
   setTimeout(function() {
     $(".hello").addClass('underline');
-    $(".intro").toggle('slow') ;
+    // $(".intro-status").toggle('slow') ;
 
-  }, 500);
+  }, 1000);
 }
 
 $(document).ready(function(){

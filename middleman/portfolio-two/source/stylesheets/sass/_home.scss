@@ -1,4 +1,12 @@
+@-webkit-keyframes typing {
+    from { width: 100% }
+    to { width:0 }
+}
 
+@-moz-keyframes typing {
+    from { width: 100% }
+    to { width:0 }
+}
 
   @media only screen and (max-width: 800){
     // height:500px;
@@ -78,7 +86,7 @@
 
 
   .intro{
-    display:none;
+
     // padding-top: 15px;
     > div > p {
     // font-size:1.5em;
@@ -89,10 +97,12 @@
     }
   }
 
-  .intro-line {
-    >span {
-      background-color: white;
-    }
+  .intro-status {
+
+    // display:none;
+    -webkit-animation: typing 8s steps(24, end); /* # of steps = # of characters */
+    -moz-animation: typing 8s steps(24, end); /* # of steps = # of characters */
+
   }
   .intro-buttons {
 

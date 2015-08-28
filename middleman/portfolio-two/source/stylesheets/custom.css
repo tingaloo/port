@@ -9,6 +9,16 @@ h1, h2, h3, p, a, li {
 .full-width {
   margin: 0 0; }
 
+@-webkit-keyframes typing {
+  from {
+    width: 100%; }
+  to {
+    width: 0; } }
+@-moz-keyframes typing {
+  from {
+    width: 100%; }
+  to {
+    width: 0; } }
 .content {
   height: 100vh;
   background: #772953;
@@ -61,13 +71,14 @@ h1, h2, h3, p, a, li {
       -webkit-transform: scaleX(1) !important;
       -ms-transform: scaleX(1) !important;
       transform: scaleX(1) !important; }
-  .content .intro {
-    display: none; }
-    @media (max-width: 768px) {
-      .content .intro > div > p {
-        font-size: 1em; } }
-  .content .intro-line > span {
-    background-color: white; }
+  @media (max-width: 768px) {
+    .content .intro > div > p {
+      font-size: 1em; } }
+  .content .intro-status {
+    -webkit-animation: typing 8s steps(24, end);
+    /* # of steps = # of characters */
+    -moz-animation: typing 8s steps(24, end);
+    /* # of steps = # of characters */ }
   .content .intro-buttons > #so-link {
     color: #F47920;
     -webkit-transition: color 500ms ease-in-out;
