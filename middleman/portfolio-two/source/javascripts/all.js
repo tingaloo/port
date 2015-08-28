@@ -46,8 +46,8 @@ $(document).ready(function(){
     var $window = $(window);
     var docViewTop = $(window).scrollTop();
     var docViewBottom = docViewTop + $(window).height();
-    var elemTop = $(elem).offset().top;
-    var elemBottom = elemTop + $(elem).height();
+    var elemTop = (elem).offset().top;
+    var elemBottom = elemTop + (elem).height();
     return ((elemBottom >= docViewTop) && (elemTop <= docViewBottom) && (elemBottom <= docViewBottom) && (elemTop >= docViewTop));
 }
 
@@ -55,13 +55,29 @@ $(document).ready(function(){
 
   //on scroll event handler
 $(window).scroll(function() {
-    if(isScrolledIntoView('.project-pic'))
+    if(isScrolledIntoView($('.project-pic')))
     {
-        $(".projects-header-text").addClass('highlight');
+        $(".projects-header-text").addClass('underline');
     }
-    if(isScrolledIntoView('#about-block'))
+    if(isScrolledIntoView($('#about-block')))
     {
         $(".about-header-text").addClass('underline');
+    }
+    if(isScrolledIntoView($('.project-caption').eq(0)))
+    {
+      $('.project-pic').eq(0).animate({"left":"0px"}, 500);
+    }
+    if(isScrolledIntoView($('.project-caption').eq(1)))
+    {
+      $('.project-pic').eq(1).animate({"left":"0px"}, 500);
+    }
+    if(isScrolledIntoView($('.project-caption').eq(2)))
+    {
+      $('.project-pic').eq(2).animate({"left":"0px"}, 500);
+    }
+    if(isScrolledIntoView($('.project-caption').eq(3)))
+    {
+      $('.project-pic').eq(3).animate({"left":"0px"}, 500);
     }
 
 });

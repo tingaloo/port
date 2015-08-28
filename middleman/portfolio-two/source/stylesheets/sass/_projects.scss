@@ -43,7 +43,7 @@
         transition: 1s ease-in;
     }
 
-    >.highlight:before{
+    >.underline:before{
       -webkit-transform: scaleX(1) !important;
       -ms-transform: scaleX(1) !important;
       transform: scaleX(1) !important;
@@ -72,19 +72,17 @@
     -moz-transition: margin 0.5s ease-in-out;
     -o-transition: margin 0.5s ease-in-out;
 
-
-
-    // -webkit-transition: box-shadow .3s ease-in-out;
-    // -o-transition: box-shadow .3s ease-in-out;
-    // -moz-transition: box-shadow .3s ease-in-out;
-    // -ms-transition: box-shadow .3s ease-in-out;
-    // -kthtml-transition: box-shadow .3s ease-in-out;
-    // transition: box-shadow .3s ease-in-out;
+  z-index:2;
+    position:absolute;
+    left:-1000px;
+    background:#f90;
+    color:#000;
 
     // s3 s4 s5
 
   @media screen and (-webkit-min-device-pixel-ratio: 2.0)and (max-width: 768px) {
     max-height: 350px;
+    position:relative;
   // margin-bottom: 20%;
   }
 
